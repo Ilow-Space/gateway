@@ -18,6 +18,7 @@
         ],
         "queryStrategy": "UseIP"
     },
+    "remarks": "test",
     "routing": {
         "balancers": [
             {
@@ -66,10 +67,6 @@
             },
             {
                 "type": "field",
-                "inboundTag": [
-                    "inbound-blacklist-socks",
-                    "inbound-blacklist-http"
-                ],
                 "domain": [
                     "domain:yandex.ru",
                     "domain:yandex.net",
@@ -116,8 +113,7 @@
     },
     "inbounds": [
         {
-            "remarks": "🇺🇸 RU MAIN",
-            "tag": "inbound-main-socks",
+            "tag": "socks",
             "port": 10808,
             "listen": "127.0.0.1",
             "protocol": "socks",
@@ -136,48 +132,8 @@
             }
         },
         {
-            "remarks": "🇺🇸 RU MAIN",
-            "tag": "inbound-main-http",
+            "tag": "http",
             "port": 10809,
-            "listen": "127.0.0.1",
-            "protocol": "http",
-            "settings": {
-                "allowTransparent": false
-            },
-            "sniffing": {
-                "enabled": true,
-                "routeOnly": false,
-                "destOverride": [
-                    "http",
-                    "tls",
-                    "quic"
-                ]
-            }
-        },
-        {
-            "remarks": "🇺🇸 RU BLACKLIST ONLY",
-            "tag": "inbound-blacklist-socks",
-            "port": 10810,
-            "listen": "127.0.0.1",
-            "protocol": "socks",
-            "settings": {
-                "udp": true,
-                "auth": "noauth"
-            },
-            "sniffing": {
-                "enabled": true,
-                "routeOnly": false,
-                "destOverride": [
-                    "http",
-                    "tls",
-                    "quic"
-                ]
-            }
-        },
-        {
-            "remarks": "🇺🇸 RU BLACKLIST ONLY",
-            "tag": "inbound-blacklist-http",
-            "port": 10811,
             "listen": "127.0.0.1",
             "protocol": "http",
             "settings": {
@@ -235,7 +191,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #1"
         },
         {
             "tag": "proxy-1",
@@ -277,7 +234,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #2"
         },
         {
             "tag": "proxy-2",
@@ -319,7 +277,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #3"
         },
         {
             "tag": "proxy-3",
@@ -361,7 +320,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #4"
         },
         {
             "tag": "proxy-4",
@@ -403,7 +363,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #5"
         },
         {
             "tag": "proxy-5",
@@ -445,7 +406,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #6"
         },
         {
             "tag": "proxy-6",
@@ -487,7 +449,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #7"
         },
         {
             "tag": "proxy-7",
@@ -529,7 +492,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #8"
         },
         {
             "tag": "proxy-8",
@@ -571,7 +535,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #9"
         },
         {
             "tag": "proxy-9",
@@ -613,7 +578,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #10"
         },
         {
             "tag": "proxy-10",
@@ -655,7 +621,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #11"
         },
         {
             "tag": "proxy-11",
@@ -697,7 +664,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #12"
         },
         {
             "tag": "proxy-12",
@@ -739,7 +707,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #13"
         },
         {
             "tag": "proxy-13",
@@ -781,7 +750,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #14"
         },
         {
             "tag": "proxy-14",
@@ -823,7 +793,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #15"
         },
         {
             "tag": "proxy-15",
@@ -865,7 +836,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #16"
         },
         {
             "tag": "proxy-16",
@@ -907,7 +879,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #17"
         },
         {
             "tag": "proxy-17",
@@ -951,7 +924,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #18"
         },
         {
             "tag": "proxy-18",
@@ -995,7 +969,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #19"
         },
         {
             "tag": "proxy-19",
@@ -1039,7 +1014,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #20"
         },
         {
             "tag": "proxy-20",
@@ -1083,7 +1059,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #21"
         },
         {
             "tag": "proxy-21",
@@ -1127,7 +1104,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #22"
         },
         {
             "tag": "proxy-22",
@@ -1171,7 +1149,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #23"
         },
         {
             "tag": "proxy-23",
@@ -1215,7 +1194,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #24"
         },
         {
             "tag": "proxy-24",
@@ -1257,7 +1237,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 VK — #25"
         },
         {
             "tag": "proxy-25",
@@ -1299,7 +1280,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #26"
         },
         {
             "tag": "proxy-26",
@@ -1341,7 +1323,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #27"
         },
         {
             "tag": "proxy-27",
@@ -1385,7 +1368,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #28"
         },
         {
             "tag": "proxy-28",
@@ -1427,7 +1411,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #29"
         },
         {
             "tag": "proxy-29",
@@ -1471,7 +1456,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #30"
         },
         {
             "tag": "proxy-30",
@@ -1515,7 +1501,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #31"
         },
         {
             "tag": "proxy-31",
@@ -1559,7 +1546,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #32"
         },
         {
             "tag": "proxy-32",
@@ -1603,7 +1591,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #33"
         },
         {
             "tag": "proxy-33",
@@ -1647,7 +1636,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #34"
         },
         {
             "tag": "proxy-34",
@@ -1691,7 +1681,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #35"
         },
         {
             "tag": "proxy-35",
@@ -1735,7 +1726,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #36"
         },
         {
             "tag": "proxy-36",
@@ -1779,7 +1771,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #37"
         },
         {
             "tag": "proxy-37",
@@ -1823,7 +1816,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #38"
         },
         {
             "tag": "proxy-38",
@@ -1867,7 +1861,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #39"
         },
         {
             "tag": "proxy-39",
@@ -1911,7 +1906,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #40"
         },
         {
             "tag": "proxy-40",
@@ -1955,7 +1951,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #41"
         },
         {
             "tag": "proxy-41",
@@ -1999,7 +1996,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #42"
         },
         {
             "tag": "proxy-42",
@@ -2043,7 +2041,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #43"
         },
         {
             "tag": "proxy-43",
@@ -2087,7 +2086,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #44"
         },
         {
             "tag": "proxy-44",
@@ -2131,7 +2131,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #45"
         },
         {
             "tag": "proxy-45",
@@ -2175,7 +2176,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Yandex — #46"
         },
         {
             "tag": "proxy-46",
@@ -2219,7 +2221,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Selectel — #56"
         },
         {
             "tag": "proxy-47",
@@ -2263,7 +2266,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Selectel — #57"
         },
         {
             "tag": "proxy-48",
@@ -2307,7 +2311,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Selectel — #58"
         },
         {
             "tag": "proxy-49",
@@ -2351,7 +2356,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Selectel — #59"
         },
         {
             "tag": "proxy-50",
@@ -2393,7 +2399,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Timeweb — #60"
         },
         {
             "tag": "proxy-51",
@@ -2437,7 +2444,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Timeweb — #61"
         },
         {
             "tag": "proxy-52",
@@ -2481,7 +2489,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Timeweb — #62"
         },
         {
             "tag": "proxy-53",
@@ -2525,7 +2534,8 @@
                 "enabled": false,
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
-            }
+            },
+            "_comment": "🇷🇺 Timeweb — #63"
         },
         {
             "tag": "direct",
