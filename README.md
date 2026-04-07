@@ -1,6 +1,6 @@
 # gateway
 
-**Gateway** is a lightweight, high-performance linkset designed to bypass network whitelists with ease. By utilizing **happy routing** and **automated server selection**, it ensures your connection stays fluid, stable, and—most importantly—unrestricted.
+**Gateway** is a lightweight, high-performance linkset designed to bypass network whitelists with ease. By utilizing **happ routing** and **automated server selection**, it ensures your connection stays fluid, stable, and—most importantly—unrestricted.
 
 ---
 
