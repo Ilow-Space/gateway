@@ -1,6 +1,3 @@
-# /// script
-# dependencies = ["requests"]
-# ///
 import requests
 import os
 import sys
