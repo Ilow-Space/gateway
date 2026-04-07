@@ -77,6 +77,7 @@ BASE_CONFIG = {
         "servers": ["1.1.1.1", "1.0.0.1"],
         "queryStrategy": "UseIP"
     },
+    "remarks": "🇷🇺zieng2 WL BYPASS — balanced by ilow",
     "routing": {
         "balancers": [
             {
