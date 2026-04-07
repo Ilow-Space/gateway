@@ -12,7 +12,56 @@ SAVE_PATH = os.path.join(DATA_DIR, "balanced_config.json")
 SOURCE_URL = "https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt"
 KEYWORDS = ["VK", "Yandex", "Selectel", "Timeweb", "CDNvideo"]
 
-# The new base configuration utilizing burstObservatory and leastping balancing
+# Define Routing Lists
+BLOCK_DOMAINS = [
+    "domain:extmaps-api.yandex.net",
+    "domain:appmetrica.yandex.ru",
+    "domain:adfstat.yandex.ru",
+    "domain:metrika.yandex.ru",
+    "domain:offerwall.yandex.net",
+    "domain:adfox.yandex.ru",
+    "domain:mc.yandex.ru",
+    "domain:analytics.google.com",
+    "domain:api.bugsnag.com",
+    "domain:app.bugsnag.com",
+    "domain:browser.sentry-cdn.com",
+    "domain:app.getsentry.com",
+    "domain:ads.vk.com",
+    "domain:ad.mail.ru",
+    "domain:top-fwz1.mail.ru",
+    "domain:ads.huawei.com",
+    "domain:adsdk.yandex.ru",
+    "domain:analytics.mobile.yandex.net"
+]
+
+DIRECT_DOMAINS = [
+    "domain:yandex.ru",
+    "domain:yandex.net",
+    "domain:yandex.com",
+    "domain:ya.ru",
+    "domain:vk.com",
+    "domain:vk.me",
+    "domain:vk-cdn.net",
+    "domain:mail.ru",
+    "domain:ok.ru",
+    "domain:gosuslugi.ru",
+    "domain:mos.ru",
+    "domain:nalog.gov.ru",
+    "domain:ozon.ru",
+    "domain:wildberries.ru",
+    "domain:avito.ru",
+    "domain:sberbank.ru",
+    "domain:sber.ru",
+    "domain:tinkoff.ru",
+    "domain:tbank.ru",
+    "domain:alfabank.ru",
+    "domain:vtb.ru",
+    "domain:gazprombank.ru",
+    "domain:rutube.ru",
+    "domain:kinopoisk.ru"
+]
+
+# The new base configuration utilizing burstObservatory, leastping balancing, and custom routing
 BASE_CONFIG = {
     "burstObservatory": {
         "pingConfig": {
@@ -46,6 +95,16 @@ BASE_CONFIG = {
             }
         ],
         "rules": [
+            {
+                "type": "field",
+                "domain": BLOCK_DOMAINS,
+                "outboundTag": "block"
+            },
+            {
+                "type": "field",
+                "domain": DIRECT_DOMAINS,
+                "outboundTag": "direct"
+            },
             {
                 "type": "field",
                 "protocol": ["bittorrent"],
