@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "c90b0e69-e55a-4458-afd5-b5feb678a3f8",
+                                "id": "35260ee8-ae06-4e63-9d61-a476c0836802",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -198,6 +198,51 @@
         },
         {
             "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "84.201.131.237",
+                        "port": 8445,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "b52c39ab-6985-4399-bd02-9af48b0b3c6c",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "XK84BZHm8wGcPS24VRXFUv2PC399k6KejjV0GO_J4yY",
+                    "shortId": "058f0bcda6bf261b",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #2"
+        },
+        {
+            "tag": "proxy-2",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -239,51 +284,6 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Yandex — #2"
-        },
-        {
-            "tag": "proxy-2",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "158.160.98.174",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "a5bc533a-e4ef-4b4b-bb43-475b458dc8bb",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0",
-                    "shortId": "3c1523da43287ec4",
-                    "serverName": "smartcaptcha.yandexcloud.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
             "_comment": "🇷🇺 Yandex — #3"
         },
         {
@@ -292,12 +292,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "158.160.111.153",
-                        "port": 443,
+                        "address": "84.201.131.237",
+                        "port": 47015,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "a5bc533a-e4ef-4b4b-bb43-475b458dc8bb",
+                                "id": "b52c39ab-6985-4399-bd02-9af48b0b3c6c",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -315,12 +315,12 @@
                     }
                 },
                 "realitySettings": {
-                    "publicKey": "66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0",
-                    "shortId": "3c1523da43287ec4",
-                    "serverName": "smartcaptcha.yandexcloud.net",
-                    "fingerprint": "random",
+                    "publicKey": "XK84BZHm8wGcPS24VRXFUv2PC399k6KejjV0GO_J4yY",
+                    "shortId": "",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "qq",
                     "show": false,
-                    "spiderX": "/"
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -337,12 +337,102 @@
             "settings": {
                 "vnext": [
                     {
+                        "address": "158.160.98.174",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2ef678d3-9ea4-4ec3-b377-6b0f104bb27a",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0",
+                    "shortId": "3c1523da43287ec4",
+                    "serverName": "smartcaptcha.yandexcloud.net",
+                    "fingerprint": "random",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #5"
+        },
+        {
+            "tag": "proxy-5",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "158.160.111.153",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2ef678d3-9ea4-4ec3-b377-6b0f104bb27a",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0",
+                    "shortId": "3c1523da43287ec4",
+                    "serverName": "smartcaptcha.yandexcloud.net",
+                    "fingerprint": "random",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #6"
+        },
+        {
+            "tag": "proxy-6",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
                         "address": "46.243.235.30",
                         "port": 8443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "c90b0e69-e55a-4458-afd5-b5feb678a3f8",
+                                "id": "35260ee8-ae06-4e63-9d61-a476c0836802",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -374,10 +464,55 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 CDNvideo — #62"
+            "_comment": "🇷🇺 CDNvideo — #64"
         },
         {
-            "tag": "proxy-5",
+            "tag": "proxy-7",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "84.252.134.63",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+                    "shortId": "111111",
+                    "serverName": "5post-gate.x5.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #73"
+        },
+        {
+            "tag": "proxy-8",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -422,7 +557,7 @@
             "_comment": "🇷🇺 Selectel — #74"
         },
         {
-            "tag": "proxy-6",
+            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -467,7 +602,7 @@
             "_comment": "🇷🇺 Selectel — #75"
         },
         {
-            "tag": "proxy-7",
+            "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -512,7 +647,7 @@
             "_comment": "🇷🇺 Selectel — #76"
         },
         {
-            "tag": "proxy-8",
+            "tag": "proxy-11",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -557,7 +692,7 @@
             "_comment": "🇷🇺 Selectel — #77"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -602,7 +737,7 @@
             "_comment": "🇷🇺 Selectel — #78"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -647,7 +782,7 @@
             "_comment": "🇷🇺 Selectel — #79"
         },
         {
-            "tag": "proxy-11",
+            "tag": "proxy-14",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -692,17 +827,17 @@
             "_comment": "🇷🇺 Selectel — #80"
         },
         {
-            "tag": "proxy-12",
+            "tag": "proxy-15",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "82.97.243.86",
+                        "address": "84.252.134.63",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "de568652-4cea-45e2-ba86-1a31e505f780",
+                                "id": "6abe2cfd-ecf7-4a43-9be3-5139b3bad671",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -720,12 +855,12 @@
                     }
                 },
                 "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
+                    "publicKey": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+                    "shortId": "111111",
+                    "serverName": "5post-gate.x5.ru",
+                    "fingerprint": "qq",
                     "show": false,
-                    "spiderX": "/"
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -734,20 +869,20 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #81"
+            "_comment": "🇷🇺 Selectel — #81"
         },
         {
-            "tag": "proxy-13",
+            "tag": "proxy-16",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "2.59.42.204",
+                        "address": "158.160.255.31",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "99ab5a2d-7bfc-4168-8864-aa550bc15fab",
+                                "id": "6abe2cfd-ecf7-4a43-9be3-5139b3bad671",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -765,12 +900,12 @@
                     }
                 },
                 "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
+                    "publicKey": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+                    "shortId": "111111",
+                    "serverName": "5post-gate.x5.ru",
+                    "fingerprint": "chrome",
                     "show": false,
-                    "spiderX": "/"
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -779,10 +914,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #82"
+            "_comment": "🇷🇺 Selectel — #82"
         },
         {
-            "tag": "proxy-14",
+            "tag": "proxy-17",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -792,7 +927,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "649e2f4d-f377-435f-8dec-b7500ccfdc09",
+                                "id": "8bb171d0-7a05-49d9-ae8d-5a8923c4c2a3",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -827,7 +962,97 @@
             "_comment": "🇷🇺 Timeweb — #83"
         },
         {
-            "tag": "proxy-15",
+            "tag": "proxy-18",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "82.97.243.86",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "8ad88c94-0b85-4801-9cf4-b82fda9d9aa8",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
+                    "shortId": "",
+                    "serverName": "goodcardboard.shop",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #84"
+        },
+        {
+            "tag": "proxy-19",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "2.59.42.204",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2d8305c9-0a38-4e2f-ad2c-d34fb376fe38",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
+                    "shortId": "",
+                    "serverName": "goodcardboard.shop",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #85"
+        },
+        {
+            "tag": "proxy-20",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -868,10 +1093,54 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #84"
+            "_comment": "🇷🇺 Timeweb — #86"
         },
         {
-            "tag": "proxy-16",
+            "tag": "proxy-21",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.239.61.193",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "023a6c5c-6933-4735-90bc-fa435b955927",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "iNHjpSHOGfa1qz-EIC2NG2iV_zcvEx0DC3FD936YURk",
+                    "shortId": "8820",
+                    "serverName": "yahoo.com",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #87"
+        },
+        {
+            "tag": "proxy-22",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -913,55 +1182,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #85"
+            "_comment": "🇷🇺 Timeweb — #88"
         },
         {
-            "tag": "proxy-17",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "85.193.88.82",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "0fb1e80b-65c8-4432-b3d0-6cd1420cbd28",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #86"
-        },
-        {
-            "tag": "proxy-18",
+            "tag": "proxy-23",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -971,97 +1195,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "0fb1e80b-65c8-4432-b3d0-6cd1420cbd28",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #87"
-        },
-        {
-            "tag": "proxy-19",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "89.223.68.181",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "0fb1e80b-65c8-4432-b3d0-6cd1420cbd28",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #88"
-        },
-        {
-            "tag": "proxy-20",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "176.124.216.182",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "0fb1e80b-65c8-4432-b3d0-6cd1420cbd28",
+                                "id": "356d98ab-6e6a-4d37-9542-c9318477f7d7",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -1096,17 +1230,17 @@
             "_comment": "🇷🇺 Timeweb — #89"
         },
         {
-            "tag": "proxy-21",
+            "tag": "proxy-24",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.154.192.167",
+                        "address": "176.124.216.182",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "0fb1e80b-65c8-4432-b3d0-6cd1420cbd28",
+                                "id": "356d98ab-6e6a-4d37-9542-c9318477f7d7",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -1141,12 +1275,12 @@
             "_comment": "🇷🇺 Timeweb — #90"
         },
         {
-            "tag": "proxy-22",
+            "tag": "proxy-25",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "94.228.125.209",
+                        "address": "85.193.88.82",
                         "port": 443,
                         "users": [
                             {
@@ -1186,97 +1320,7 @@
             "_comment": "🇷🇺 Timeweb — #91"
         },
         {
-            "tag": "proxy-23",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "176.124.216.182",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "356d98ab-6e6a-4d37-9542-c9318477f7d7",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #92"
-        },
-        {
-            "tag": "proxy-24",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "85.193.88.82",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "356d98ab-6e6a-4d37-9542-c9318477f7d7",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
-                    "shortId": "",
-                    "serverName": "goodcardboard.shop",
-                    "fingerprint": "randomized",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #93"
-        },
-        {
-            "tag": "proxy-25",
+            "tag": "proxy-26",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1318,10 +1362,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #94"
+            "_comment": "🇷🇺 Timeweb — #92"
         },
         {
-            "tag": "proxy-26",
+            "tag": "proxy-27",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1363,10 +1407,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #95"
+            "_comment": "🇷🇺 Timeweb — #93"
         },
         {
-            "tag": "proxy-27",
+            "tag": "proxy-28",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1408,10 +1452,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #96"
+            "_comment": "🇷🇺 Timeweb — #94"
         },
         {
-            "tag": "proxy-28",
+            "tag": "proxy-29",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1453,10 +1497,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #97"
+            "_comment": "🇷🇺 Timeweb — #95"
         },
         {
-            "tag": "proxy-29",
+            "tag": "proxy-30",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1498,10 +1542,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #98"
+            "_comment": "🇷🇺 Timeweb — #96"
         },
         {
-            "tag": "proxy-30",
+            "tag": "proxy-31",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1543,20 +1587,110 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #99"
+            "_comment": "🇷🇺 Timeweb — #97"
         },
         {
-            "tag": "proxy-31",
+            "tag": "proxy-32",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "176.124.216.182",
+                        "address": "94.228.125.209",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "745f58f2-7a54-458c-a0fa-faf54cfddca5",
+                                "id": "084ccaf7-342d-4006-ab1f-31afb57af2cc",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
+                    "shortId": "",
+                    "serverName": "goodcardboard.shop",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #98"
+        },
+        {
+            "tag": "proxy-33",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.154.192.167",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "084ccaf7-342d-4006-ab1f-31afb57af2cc",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
+                    "shortId": "",
+                    "serverName": "goodcardboard.shop",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #99"
+        },
+        {
+            "tag": "proxy-34",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.193.88.82",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "084ccaf7-342d-4006-ab1f-31afb57af2cc",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -1589,6 +1723,51 @@
                 "xudpProxyUDP443": ""
             },
             "_comment": "🇷🇺 Timeweb — #100"
+        },
+        {
+            "tag": "proxy-35",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "89.223.68.181",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "084ccaf7-342d-4006-ab1f-31afb57af2cc",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc",
+                    "shortId": "",
+                    "serverName": "goodcardboard.shop",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #101"
         },
         {
             "tag": "direct",
