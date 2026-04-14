@@ -8,7 +8,7 @@
 
 * **Lightweight Design:** Minimal overhead for maximum speed.
 * **Retested & Filtered:** Every link in the set is actively monitored and filtered to ensure high reliability.
-* **Happy Routing:** Optimized pathfinding to reduce latency and improve connection success rates.
+* **Happ Routing:** Optimized pathfinding to reduce latency and improve connection success rates.
 * **Auto Server Selection:** Automatically connects you to the most responsive server available, no manual switching required.
 
 ---
