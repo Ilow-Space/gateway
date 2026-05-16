@@ -342,7 +342,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "4f332383-748b-464b-8ed5-2272be99a1b0",
+                                "id": "1595b84d-7ae4-4a37-a759-37efb6633405",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -387,7 +387,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "4f332383-748b-464b-8ed5-2272be99a1b0",
+                                "id": "1595b84d-7ae4-4a37-a759-37efb6633405",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -432,7 +432,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "4f332383-748b-464b-8ed5-2272be99a1b0",
+                                "id": "1595b84d-7ae4-4a37-a759-37efb6633405",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -472,37 +472,35 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "195.209.88.180",
+                        "address": "80.90.188.250",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "d471e982-4237-Fade-94df-c0d11029282a",
+                                "id": "5b2fc182-a497-4fbe-aeb8-1841dae99022",
                                 "level": 8,
-                                "security": "auto"
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/",
-                    "headers": {
-                        "Host": "s28233.cdn.ngenix.net"
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
                     }
                 },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "s28233.cdn.ngenix.net",
-                    "fingerprint": "qq",
+                "realitySettings": {
+                    "publicKey": "FSq5DVYJ8UaKArP3FtCmlZKqOQ08dKkqB2fefjRkA0M",
+                    "shortId": "",
+                    "serverName": "eh.vk.com",
+                    "fingerprint": "chrome",
                     "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -511,7 +509,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #12"
+            "_comment": "🇷🇺 Timeweb — #13"
         },
         {
             "tag": "proxy-8",
@@ -524,7 +522,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "d3aa0f14-fa8d-4b36-9dcb-1ff771f5bd6c",
+                                "id": "d9bfb52b-4809-411e-b226-0bad08f8dd74",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -556,7 +554,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #13"
+            "_comment": "🇷🇺 Timeweb — #14"
         },
         {
             "tag": "proxy-9",
@@ -565,11 +563,11 @@
                 "vnext": [
                     {
                         "address": "176.57.213.153",
-                        "port": 8443,
+                        "port": 40443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -578,52 +576,11 @@
                 ]
             },
             "streamSettings": {
-                "network": "xhttp",
+                "network": "grpc",
                 "security": "reality",
-                "realitySettings": {
-                    "publicKey": "ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw",
-                    "shortId": "2d5a31d63a1c4914",
-                    "serverName": "apple.com",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #14"
-        },
-        {
-            "tag": "proxy-10",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "176.57.213.153",
-                        "port": 1443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
+                "grpcSettings": {
+                    "serviceName": "apple-com/2265cbcc",
+                    "multiMode": false
                 },
                 "realitySettings": {
                     "publicKey": "ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw",
@@ -643,7 +600,7 @@
             "_comment": "🇷🇺 Timeweb — #15"
         },
         {
-            "tag": "proxy-11",
+            "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -653,7 +610,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -688,6 +645,51 @@
             "_comment": "🇷🇺 Timeweb — #16"
         },
         {
+            "tag": "proxy-11",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "176.57.213.153",
+                        "port": 1443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw",
+                    "shortId": "2d5a31d63a1c4914",
+                    "serverName": "apple.com",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": "/"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #17"
+        },
+        {
             "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
@@ -698,7 +700,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -724,7 +726,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #17"
+            "_comment": "🇷🇺 Timeweb — #18"
         },
         {
             "tag": "proxy-13",
@@ -737,7 +739,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -767,7 +769,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #18"
+            "_comment": "🇷🇺 Timeweb — #19"
         },
         {
             "tag": "proxy-14",
@@ -776,11 +778,11 @@
                 "vnext": [
                     {
                         "address": "176.57.213.153",
-                        "port": 40443,
+                        "port": 8443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cc7c716d-63c2-43d7-9708-ec258964c033",
+                                "id": "8f7ef42c-52eb-4724-a27e-875a80a0c61c",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -789,12 +791,8 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
+                "network": "xhttp",
                 "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "apple-com/2265cbcc",
-                    "multiMode": false
-                },
                 "realitySettings": {
                     "publicKey": "ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw",
                     "shortId": "2d5a31d63a1c4914",
@@ -802,51 +800,6 @@
                     "fingerprint": "chrome",
                     "show": false,
                     "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #19"
-        },
-        {
-            "tag": "proxy-15",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "5.42.108.243",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "d9bfb52b-4809-411e-b226-0bad08f8dd74",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY",
-                    "shortId": "c1a7e9b4711d5f60",
-                    "serverName": "rruu.persik.host",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": ""
                 }
             },
             "mux": {
