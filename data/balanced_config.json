@@ -252,7 +252,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f26ef0fc-01c3-07d0-bc00-c2dfd0332e3c",
+                                "id": "bab9138c-0796-07d0-b6df-986b37048f69",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -294,12 +294,57 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "84.201.170.9",
+                        "address": "158.160.159.180",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "fada9e79-db50-46dd-989f-0eb972a483a7",
+                                "id": "5eba8d1c-e3e6-4ee3-bb89-ef630a9c4153",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+                    "shortId": "111111",
+                    "serverName": "5post-gate.x5.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #12"
+        },
+        {
+            "tag": "proxy-4",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "158.160.245.33",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "5eba8d1c-e3e6-4ee3-bb89-ef630a9c4153",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -334,17 +379,17 @@
             "_comment": "🇷🇺 Selectel — #13"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "158.160.159.180",
+                        "address": "84.201.170.9",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "fada9e79-db50-46dd-989f-0eb972a483a7",
+                                "id": "5eba8d1c-e3e6-4ee3-bb89-ef630a9c4153",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -379,51 +424,6 @@
             "_comment": "🇷🇺 Selectel — #14"
         },
         {
-            "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "158.160.245.33",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "fada9e79-db50-46dd-989f-0eb972a483a7",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
-                    "shortId": "111111",
-                    "serverName": "5post-gate.x5.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #15"
-        },
-        {
             "tag": "proxy-6",
             "protocol": "vless",
             "settings": {
@@ -434,7 +434,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f503629d-a016-4412-b139-684b4dc63b4e",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -464,10 +464,53 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #16"
+            "_comment": "🇷🇺 Selectel — #15"
         },
         {
             "tag": "proxy-7",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.91.52.231",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "elecru.instrumentidlyadoma.com",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "qmj3LynPhFqW4pVQf47vfPx-nnykWXxuzNoWmw_DEyc",
+                    "shortId": "",
+                    "serverName": "elecru.instrumentidlyadoma.com",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #16"
+        },
+        {
+            "tag": "proxy-8",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -477,7 +520,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f503629d-a016-4412-b139-684b4dc63b4e",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -510,7 +553,7 @@
             "_comment": "🇷🇺 Selectel — #17"
         },
         {
-            "tag": "proxy-8",
+            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -520,7 +563,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f503629d-a016-4412-b139-684b4dc63b4e",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -553,7 +596,7 @@
             "_comment": "🇷🇺 Selectel — #18"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -563,7 +606,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f503629d-a016-4412-b139-684b4dc63b4e",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -596,7 +639,50 @@
             "_comment": "🇷🇺 Selectel — #19"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-11",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "81.163.22.17",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "eea60d7b-050b-4be6-afc7-a155efe22ff0",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "vorkutaru.instrumentidlyadoma.com",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "1KWR1P113nLmZyossZtQu2KXtIzGR0Y4YLTuKLMQ0B0",
+                    "shortId": "",
+                    "serverName": "vorkutaru.instrumentidlyadoma.com",
+                    "fingerprint": "randomized",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #20"
+        },
+        {
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -637,97 +723,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #20"
-        },
-        {
-            "tag": "proxy-11",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "62.113.43.195",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "0805fd5c-62d7-4f3e-993e-46755a2f6254",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE",
-                    "shortId": "abbcd128",
-                    "serverName": "ads.x5.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
             "_comment": "🇷🇺 Timeweb — #21"
-        },
-        {
-            "tag": "proxy-12",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "62.113.43.195",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "0805fd5c-62d7-4f3e-993e-46755a2f6254",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "reality",
-                "tcpSettings": {
-                    "header": {
-                        "type": "none"
-                    }
-                },
-                "realitySettings": {
-                    "publicKey": "RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE",
-                    "shortId": "abbcd128",
-                    "serverName": "eh.vk.com",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #22"
         },
         {
             "tag": "proxy-13",
@@ -740,7 +736,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "0805fd5c-62d7-4f3e-993e-46755a2f6254",
+                                "id": "44351898-9753-4aab-aa83-8408b58e15fa",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -772,7 +768,97 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 Timeweb — #22"
+        },
+        {
+            "tag": "proxy-14",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "62.113.43.195",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "44351898-9753-4aab-aa83-8408b58e15fa",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE",
+                    "shortId": "abbcd128",
+                    "serverName": "eh.vk.com",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 Timeweb — #23"
+        },
+        {
+            "tag": "proxy-15",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "62.113.43.195",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "44351898-9753-4aab-aa83-8408b58e15fa",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE",
+                    "shortId": "abbcd128",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #24"
         },
         {
             "tag": "direct",
