@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "55f55c7e-fae5-07d0-b800-7bd1652dd411",
+                                "id": "3d6276be-bc8f-07d0-8241-4b25e232cb14",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -198,6 +198,51 @@
         },
         {
             "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "84.201.172.67",
+                        "port": 2777,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "a48c736e-d3de-47b8-a6eb-ef1d6fd34c63",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao",
+                    "shortId": "0f4dacf08722a29f",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #2"
+        },
+        {
+            "tag": "proxy-2",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -239,7 +284,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #18"
+            "_comment": "🇷🇺 Timeweb — #19"
         },
         {
             "tag": "direct",
