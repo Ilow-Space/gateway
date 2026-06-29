@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "8ff869c1-3c9c-07d0-811f-70948fb92224",
+                                "id": "43d714c9-0649-07d0-b0f4-97dce908243e",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -202,12 +202,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "158.160.204.211",
-                        "port": 8441,
+                        "address": "84.201.172.67",
+                        "port": 2777,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "c919e592-5639-491e-a9b7-7a201175ae12",
+                                "id": "a48c736e-d3de-47b8-a6eb-ef1d6fd34c63",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -225,10 +225,10 @@
                     }
                 },
                 "realitySettings": {
-                    "publicKey": "Q5mtL2qHRAoPEVnl9GRezCHkTrNTnvW_FL3_HQhhKDo",
-                    "shortId": "06011ef464e3313f",
-                    "serverName": "ya.ru",
-                    "fingerprint": "firefox",
+                    "publicKey": "HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao",
+                    "shortId": "0f4dacf08722a29f",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "chrome",
                     "show": false,
                     "spiderX": ""
                 }
@@ -273,7 +273,7 @@
                     "publicKey": "Q5mtL2qHRAoPEVnl9GRezCHkTrNTnvW_FL3_HQhhKDo",
                     "shortId": "06011ef464e3313f",
                     "serverName": "ya.ru",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -292,12 +292,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "31.130.155.187",
-                        "port": 8443,
+                        "address": "158.160.204.211",
+                        "port": 8441,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "16eb26f6-48bb-42da-8be0-ae263778e674",
+                                "id": "c919e592-5639-491e-a9b7-7a201175ae12",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -308,17 +308,19 @@
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "tls",
+                "security": "reality",
                 "tcpSettings": {
                     "header": {
                         "type": "none"
                     }
                 },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "free-rus1.linkey1.ru",
-                    "fingerprint": "firefox",
-                    "show": false
+                "realitySettings": {
+                    "publicKey": "Q5mtL2qHRAoPEVnl9GRezCHkTrNTnvW_FL3_HQhhKDo",
+                    "shortId": "06011ef464e3313f",
+                    "serverName": "ya.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -327,7 +329,52 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #13"
+            "_comment": "🇷🇺 Yandex — #4"
+        },
+        {
+            "tag": "proxy-4",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.16.22.239",
+                        "port": 9445,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "",
+                    "serverName": "max.ru",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #15"
         },
         {
             "tag": "direct",
