@@ -207,7 +207,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f9f91c17-4c39-1f40-820a-9eead5ad0083",
+                                "id": "7a56ece7-1289-07d0-b076-250cb20a0fc1",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -252,7 +252,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f9f91c17-4c39-07d0-820a-9eead5ad0083",
+                                "id": "7a56ece7-1289-1f40-b076-250cb20a0fc1",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -288,6 +288,51 @@
         },
         {
             "tag": "proxy-3",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "45.152.113.206",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs",
+                    "shortId": "65557338e1cd5605",
+                    "serverName": "1.ru.oncloudnineservicestreang.com",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #14"
+        },
+        {
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -329,7 +374,52 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #15"
+            "_comment": "🇷🇺 Timeweb — #16"
+        },
+        {
+            "tag": "proxy-5",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "109.120.189.154",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "12acdd85-2964-4484-8db3-dfb97ed61c7c",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                },
+                "realitySettings": {
+                    "publicKey": "KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE",
+                    "shortId": "6aa44564cda562bc",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #17"
         },
         {
             "tag": "direct",
