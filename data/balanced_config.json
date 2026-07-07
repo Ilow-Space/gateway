@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "68ca1306-c280-07d0-95a0-c46babf3ef7b",
+                                "id": "ff641d3c-e199-07d0-bb96-efcc16f6ad0f",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -193,6 +193,46 @@
         },
         {
             "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.105",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "eh.vk.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #12"
+        },
+        {
+            "tag": "proxy-2",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -232,7 +272,7 @@
             "_comment": "🇷🇺 Selectel — #13"
         },
         {
-            "tag": "proxy-2",
+            "tag": "proxy-3",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -272,7 +312,7 @@
             "_comment": "🇷🇺 Selectel — #14"
         },
         {
-            "tag": "proxy-3",
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -312,7 +352,7 @@
             "_comment": "🇷🇺 Selectel — #15"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -352,7 +392,7 @@
             "_comment": "🇷🇺 Selectel — #16"
         },
         {
-            "tag": "proxy-5",
+            "tag": "proxy-6",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -392,12 +432,12 @@
             "_comment": "🇷🇺 Selectel — #17"
         },
         {
-            "tag": "proxy-6",
+            "tag": "proxy-7",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.14",
+                        "address": "213.219.212.30",
                         "port": 443,
                         "users": [
                             {
@@ -432,12 +472,12 @@
             "_comment": "🇷🇺 Selectel — #18"
         },
         {
-            "tag": "proxy-7",
+            "tag": "proxy-8",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.105",
+                        "address": "213.219.212.14",
                         "port": 443,
                         "users": [
                             {
@@ -458,7 +498,7 @@
                     "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
                     "shortId": "",
                     "serverName": "eh.vk.ru",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -472,7 +512,7 @@
             "_comment": "🇷🇺 Selectel — #19"
         },
         {
-            "tag": "proxy-8",
+            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -512,46 +552,6 @@
             "_comment": "🇷🇺 Selectel — #20"
         },
         {
-            "tag": "proxy-9",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.30",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "eh.vk.ru",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #21"
-        },
-        {
             "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
@@ -589,50 +589,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #22"
+            "_comment": "🇷🇺 Selectel — #21"
         },
         {
             "tag": "proxy-11",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.14",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "eh.vk.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #23"
-        },
-        {
-            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -669,10 +629,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #24"
+            "_comment": "🇷🇺 Selectel — #22"
         },
         {
-            "tag": "proxy-13",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -709,7 +669,47 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #25"
+            "_comment": "🇷🇺 Selectel — #23"
+        },
+        {
+            "tag": "proxy-13",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.14",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "eh.vk.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #24"
         },
         {
             "tag": "proxy-14",
@@ -749,7 +749,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #26"
+            "_comment": "🇷🇺 Selectel — #25"
         },
         {
             "tag": "proxy-15",
@@ -789,7 +789,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #27"
+            "_comment": "🇷🇺 Selectel — #26"
         },
         {
             "tag": "proxy-16",
@@ -829,7 +829,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #28"
+            "_comment": "🇷🇺 Selectel — #27"
         },
         {
             "tag": "proxy-17",
@@ -869,7 +869,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #29"
+            "_comment": "🇷🇺 Selectel — #28"
         },
         {
             "tag": "proxy-18",
@@ -909,7 +909,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #30"
+            "_comment": "🇷🇺 Selectel — #29"
         },
         {
             "tag": "proxy-19",
@@ -949,7 +949,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #31"
+            "_comment": "🇷🇺 Selectel — #30"
         },
         {
             "tag": "proxy-20",
@@ -989,7 +989,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #32"
+            "_comment": "🇷🇺 Selectel — #31"
         },
         {
             "tag": "proxy-21",
@@ -1029,7 +1029,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #33"
+            "_comment": "🇷🇺 Selectel — #32"
         },
         {
             "tag": "proxy-22",
@@ -1069,7 +1069,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #34"
+            "_comment": "🇷🇺 Selectel — #33"
         },
         {
             "tag": "proxy-23",
@@ -1109,7 +1109,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #35"
+            "_comment": "🇷🇺 Selectel — #34"
         },
         {
             "tag": "proxy-24",
@@ -1149,7 +1149,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #36"
+            "_comment": "🇷🇺 Selectel — #35"
         },
         {
             "tag": "proxy-25",
@@ -1189,7 +1189,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #37"
+            "_comment": "🇷🇺 Selectel — #36"
         },
         {
             "tag": "proxy-26",
@@ -1229,7 +1229,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #38"
+            "_comment": "🇷🇺 Timeweb — #37"
         },
         {
             "tag": "direct",
