@@ -197,7 +197,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.105",
+                        "address": "213.219.212.14",
                         "port": 443,
                         "users": [
                             {
@@ -237,12 +237,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.14",
+                        "address": "213.219.212.105",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
+                                "id": "a5d0bebb-3a92-075a-2df3-4c7d36b04af0",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -258,7 +258,7 @@
                     "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
                     "shortId": "",
                     "serverName": "eh.vk.ru",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -273,6 +273,46 @@
         },
         {
             "tag": "proxy-3",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.14",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "a5d0bebb-3a92-075a-2df3-4c7d36b04af0",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "eh.vk.ru",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #4"
+        },
+        {
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -309,15 +349,15 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #4"
+            "_comment": "🇷🇺 VK — #5"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.14",
+                        "address": "213.219.212.105",
                         "port": 443,
                         "users": [
                             {
@@ -339,46 +379,6 @@
                     "shortId": "",
                     "serverName": "eh.vk.ru",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #5"
-        },
-        {
-            "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.14",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "a5d0bebb-3a92-075a-2df3-4c7d36b04af0",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "eh.vk.ru",
-                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -437,47 +437,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.105",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "a5d0bebb-3a92-075a-2df3-4c7d36b04af0",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "eh.vk.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #8"
-        },
-        {
-            "tag": "proxy-8",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.105",
+                        "address": "213.219.212.14",
                         "port": 443,
                         "users": [
                             {
@@ -509,10 +469,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #9"
+            "_comment": "🇷🇺 VK — #8"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-8",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -549,6 +509,46 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 VK — #9"
+        },
+        {
+            "tag": "proxy-9",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.30",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "8a6f9d0b-dc16-431b-8914-cf8fde1eae7e",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "eh.vk.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 VK — #10"
         },
         {
@@ -557,7 +557,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.24",
+                        "address": "213.219.212.105",
                         "port": 443,
                         "users": [
                             {
@@ -757,7 +757,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.30",
+                        "address": "213.219.212.24",
                         "port": 443,
                         "users": [
                             {
@@ -1242,7 +1242,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "21e62072-6116-07d0-a07f-7ae5e4140f8e",
+                                "id": "080c2f61-a557-0bb8-8bcb-360b62ebc4ec",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -1282,7 +1282,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "21e62072-6116-0bb8-a07f-7ae5e4140f8e",
+                                "id": "080c2f61-a557-07d0-8bcb-360b62ebc4ec",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -1352,7 +1352,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #49"
+            "_comment": "🇷🇺 Timeweb — #48"
         },
         {
             "tag": "proxy-30",
@@ -1395,47 +1395,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #50"
-        },
-        {
-            "tag": "proxy-31",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "89.208.231.191",
-                        "port": 8443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "21e62072-6116-1f40-a07f-7ae5e4140f8e",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
-                    "shortId": "d8c6b58bcbb0c323",
-                    "serverName": "max.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #51"
+            "_comment": "🇷🇺 Timeweb — #49"
         },
         {
             "tag": "direct",
