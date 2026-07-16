@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "5d65208f-cebf-07d0-a1ac-a4a855b2ee22",
+                                "id": "40d13d14-e1e5-07d0-b69a-6069586028d0",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -202,7 +202,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "1a9f2ccd-e955-4d1d-afec-e8bd8cb9fdec",
+                                "id": "50fbaffc-6785-4927-80a4-bb39f47705db",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -242,7 +242,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "1a9f2ccd-e955-4d1d-afec-e8bd8cb9fdec",
+                                "id": "50fbaffc-6785-4927-80a4-bb39f47705db",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -273,6 +273,49 @@
         },
         {
             "tag": "proxy-3",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "31.184.218.96",
+                        "port": 2087,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "28e24d0b-4c6b-41c7-abe1-b591abb0947a",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "Z4AxqPHX2UuAq3SXHbKQZlREqFSfl7ptdFn2P41dhmQ",
+                    "shortId": "c226283c4de5b1ad",
+                    "serverName": "ads.x5.ru",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #19"
+        },
+        {
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -312,10 +355,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #19"
+            "_comment": "🇷🇺 Selectel — #20"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -355,130 +398,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #20"
-        },
-        {
-            "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "72.56.5.150",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "881cbd87-6cc3-41f9-9d4c-303fa2f8deab",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "shopper.applepie-recipe.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #21"
-        },
-        {
-            "tag": "proxy-6",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "72.56.235.19",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "881cbd87-6cc3-41f9-9d4c-303fa2f8deab",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "shopper.applepie-recipe.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #22"
-        },
-        {
-            "tag": "proxy-7",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.152.93.9",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "881cbd87-6cc3-41f9-9d4c-303fa2f8deab",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "shopper.applepie-recipe.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #23"
+            "_comment": "🇷🇺 Selectel — #21"
         },
         {
             "tag": "direct",
