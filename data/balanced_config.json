@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f899b99c-c808-07d0-a982-e7f5a64450b4",
+                                "id": "f90191fc-76c5-07d0-8f0c-8c0c933403ed",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -202,7 +202,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "b10831bc-0e77-4b01-97bf-6b9af9409d9f",
+                                "id": "dff08bdd-c53e-4ca4-9634-d2ec8cfdc4ae",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -242,7 +242,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "b10831bc-0e77-4b01-97bf-6b9af9409d9f",
+                                "id": "dff08bdd-c53e-4ca4-9634-d2ec8cfdc4ae",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -277,30 +277,27 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "5.23.55.128",
-                        "port": 1080,
+                        "address": "87.228.122.108",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "f2f723f5-b97d-4414-997c-d2925013af28",
+                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "Bp5PnujrPK50eE_28vIWSyBjdIPLXCLGYPjRKx0pqgI",
-                    "shortId": "845ac2739143b71d",
-                    "serverName": "github.com",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
@@ -309,7 +306,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #21"
+            "_comment": "🇷🇺 Selectel — #20"
         },
         {
             "tag": "proxy-4",
@@ -353,46 +350,6 @@
                 "xudpProxyUDP443": ""
             },
             "_comment": "🇷🇺 Timeweb — #22"
-        },
-        {
-            "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "5.23.55.128",
-                        "port": 1080,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "f2f723f5-b97d-4414-997c-d2925013af28",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "Bp5PnujrPK50eE_28vIWSyBjdIPLXCLGYPjRKx0pqgI",
-                    "shortId": "845ac2739143b71d",
-                    "serverName": "github.com",
-                    "fingerprint": "safari",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #23"
         },
         {
             "tag": "direct",
