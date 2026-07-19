@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "803e81e2-e849-07d0-822b-d9d533cdeeb7",
+                                "id": "a4cea5b5-5316-07d0-aba1-eaffd81a5389",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -202,7 +202,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "39ac8383-7f11-4c07-9058-95f87be008e2",
+                                "id": "f7b93624-d093-4328-96ae-44a1c56726f3",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -242,7 +242,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "39ac8383-7f11-4c07-9058-95f87be008e2",
+                                "id": "f7b93624-d093-4328-96ae-44a1c56726f3",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -277,12 +277,52 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "87.228.122.108",
-                        "port": 4100,
+                        "address": "5.23.55.128",
+                        "port": 1080,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
+                                "id": "f2f723f5-b97d-4414-997c-d2925013af28",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "Bp5PnujrPK50eE_28vIWSyBjdIPLXCLGYPjRKx0pqgI",
+                    "shortId": "845ac2739143b71d",
+                    "serverName": "github.com",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #21"
+        },
+        {
+            "tag": "proxy-4",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "194.55.239.174",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -292,12 +332,18 @@
             },
             "streamSettings": {
                 "network": "ws",
-                "security": "none",
+                "security": "tls",
                 "wsSettings": {
-                    "path": "/v1",
+                    "path": "/api/v1/video-stream",
                     "headers": {
                         "Host": ""
                     }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "furrycdn.net",
+                    "fingerprint": "qq",
+                    "show": false
                 }
             },
             "mux": {
@@ -306,10 +352,50 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #22"
+            "_comment": "🇷🇺 Timeweb — #22"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "5.23.55.128",
+                        "port": 1080,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "f2f723f5-b97d-4414-997c-d2925013af28",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "Bp5PnujrPK50eE_28vIWSyBjdIPLXCLGYPjRKx0pqgI",
+                    "shortId": "845ac2739143b71d",
+                    "serverName": "github.com",
+                    "fingerprint": "safari",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #23"
+        },
+        {
+            "tag": "proxy-6",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -349,7 +435,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #23"
+            "_comment": "🇷🇺 Timeweb — #24"
         },
         {
             "tag": "direct",
