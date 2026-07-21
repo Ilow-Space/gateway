@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "d1241363-b15c-07d0-98f0-faca9c3a5fd7",
+                                "id": "e4e992d8-b522-07d0-a5ed-84cdb175fad2",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -346,7 +346,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #22"
+            "_comment": "🇷🇺 Selectel — #20"
         },
         {
             "tag": "proxy-5",
@@ -354,30 +354,33 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "95.213.143.18",
+                        "address": "78.159.245.32",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "a96373c2-6c78-44dc-ac4b-33fd3d32c68b",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-                    "shortId": "93ae75024604f796",
-                    "serverName": "findmypackets.com",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/api/v1/video-stream",
+                    "headers": {
+                        "Host": "furrycdn.net"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "furrycdn.net",
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -386,7 +389,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #23"
+            "_comment": "🇷🇺 Timeweb — #22"
         },
         {
             "tag": "proxy-6",
@@ -394,30 +397,33 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "81.163.23.184",
+                        "address": "78.159.245.32",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "26c00490-5dac-49d6-b8cc-9928904cbab4",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "rNe5OzYBfJCBAqEpm0QMh5pZevwlItSZtqGWb-5yCVI",
-                    "shortId": "9a05cc16cc5ce7aa",
-                    "serverName": "cdn3.cloud-cdn.xyz",
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/api/v1/video-stream",
+                    "headers": {
+                        "Host": "furrycdn.net"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "furrycdn.net",
                     "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": "/"
+                    "show": false
                 }
             },
             "mux": {
@@ -426,7 +432,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #24"
+            "_comment": "🇷🇺 Timeweb — #23"
         },
         {
             "tag": "proxy-7",
@@ -469,53 +475,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #27"
+            "_comment": "🇷🇺 Timeweb — #24"
         },
         {
             "tag": "proxy-8",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.245.32",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/api/v1/video-stream",
-                    "headers": {
-                        "Host": "furrycdn.net"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "furrycdn.net",
-                    "fingerprint": "firefox",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #28"
-        },
-        {
-            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -549,7 +512,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #29"
+            "_comment": "🇷🇺 Timeweb — #25"
         },
         {
             "tag": "direct",
