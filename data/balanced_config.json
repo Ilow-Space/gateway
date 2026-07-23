@@ -157,46 +157,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "161.104.107.86",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2a77a470-315c-493d-b690-59b814a804cb",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "",
-                    "serverName": "sellflow.org",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #1"
-        },
-        {
-            "tag": "proxy-1",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "37.139.43.57",
                         "port": 443,
                         "users": [
@@ -229,6 +189,46 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 VK — #1"
+        },
+        {
+            "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "161.104.107.86",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2a77a470-315c-493d-b690-59b814a804cb",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "",
+                    "serverName": "sellflow.org",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 VK — #2"
         },
         {
@@ -242,7 +242,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "7ddb038b-d505-07d0-9229-23a671749424",
+                                "id": "bf7b7e19-c86b-07d0-bd26-8a52f5fc7d08",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -306,53 +306,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #20"
+            "_comment": "🇷🇺 Selectel — #25"
         },
         {
             "tag": "proxy-4",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.245.32",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/api/v1/video-stream",
-                    "headers": {
-                        "Host": "furrycdn.net"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "furrycdn.net",
-                    "fingerprint": "firefox",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #22"
-        },
-        {
-            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -392,7 +349,50 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #23"
+            "_comment": "🇷🇺 Timeweb — #26"
+        },
+        {
+            "tag": "proxy-5",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.245.32",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/api/v1/video-stream",
+                    "headers": {
+                        "Host": "furrycdn.net"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "furrycdn.net",
+                    "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #27"
         },
         {
             "tag": "proxy-6",
@@ -435,7 +435,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #24"
+            "_comment": "🇷🇺 Timeweb — #28"
         },
         {
             "tag": "proxy-7",
@@ -472,7 +472,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #25"
+            "_comment": "🇷🇺 Timeweb — #29"
         },
         {
             "tag": "proxy-8",
@@ -512,7 +512,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #26"
+            "_comment": "🇷🇺 Timeweb — #30"
         },
         {
             "tag": "proxy-9",
@@ -552,7 +552,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #27"
+            "_comment": "🇷🇺 Timeweb — #31"
         },
         {
             "tag": "proxy-10",
@@ -592,7 +592,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #28"
+            "_comment": "🇷🇺 Timeweb — #32"
         },
         {
             "tag": "direct",
