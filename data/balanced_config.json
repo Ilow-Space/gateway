@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2a99808d-4c84-07d0-8be3-a0bb60617a8b",
+                                "id": "d894ed4e-3031-07d0-92ed-9f1b8346d547",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -197,27 +197,30 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "87.228.122.108",
-                        "port": 4100,
+                        "address": "89.208.231.191",
+                        "port": 8443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
+                                "id": "d894ed4e-3031-2328-92ed-9f1b8346d547",
                                 "level": 8,
-                                "security": "auto"
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
+                    "shortId": "d8c6b58bcbb0c323",
+                    "serverName": "max.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -226,7 +229,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #12"
+            "_comment": "🇷🇺 VK — #2"
         },
         {
             "tag": "proxy-2",
@@ -269,7 +272,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #16"
+            "_comment": "🇷🇺 Timeweb — #20"
         },
         {
             "tag": "proxy-3",
@@ -312,7 +315,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #17"
+            "_comment": "🇷🇺 Timeweb — #21"
         },
         {
             "tag": "proxy-4",
@@ -355,53 +358,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #18"
+            "_comment": "🇷🇺 Timeweb — #22"
         },
         {
             "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "186.246.6.189",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "507e8554-4941-4297-9196-af102455f6ed",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "ebl",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE",
-                    "shortId": "",
-                    "serverName": "optim.tildacdn.pub",
-                    "fingerprint": "edge",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #19"
-        },
-        {
-            "tag": "proxy-6",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -435,44 +395,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #20"
-        },
-        {
-            "tag": "proxy-7",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "194.67.102.65",
-                        "port": 8880,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "fd22ad82-2d89-4338-b72c-5092ae699c7d",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/rutube",
-                    "headers": {
-                        "Host": "rutube.ummapeople.online"
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #21"
+            "_comment": "🇷🇺 Timeweb — #23"
         },
         {
             "tag": "direct",
