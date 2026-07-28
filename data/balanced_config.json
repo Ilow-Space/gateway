@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "0a33f279-14b2-07d0-8cfc-0ea5c0fa1343",
+                                "id": "408ab918-258b-07d0-9bab-dbb4a00c2b34",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -197,30 +197,27 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.30",
-                        "port": 443,
+                        "address": "87.228.122.108",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "138bfe7f-a2c4-443e-befe-6a9d13e1550b",
+                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "pro-ru-213.emrata.top",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
@@ -242,7 +239,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "d9e292f3-3c9e-4fea-9961-a0a8ae201eac",
+                                "id": "138bfe7f-a2c4-443e-befe-6a9d13e1550b",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -298,7 +295,7 @@
                     "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
                     "shortId": "",
                     "serverName": "pro-ru-213.emrata.top",
-                    "fingerprint": "qq",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -313,6 +310,46 @@
         },
         {
             "tag": "proxy-4",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.14",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "d9e292f3-3c9e-4fea-9961-a0a8ae201eac",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "pro-ru-213.emrata.top",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #27"
+        },
+        {
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -349,10 +386,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #27"
+            "_comment": "🇷🇺 Selectel — #28"
         },
         {
-            "tag": "proxy-5",
+            "tag": "proxy-6",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -379,46 +416,6 @@
                     "shortId": "",
                     "serverName": "pro-ru-213.emrata.top",
                     "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #28"
-        },
-        {
-            "tag": "proxy-6",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.24",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "d9e292f3-3c9e-4fea-9961-a0a8ae201eac",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "pro-ru-213.emrata.top",
-                    "fingerprint": "qq",
                     "show": false,
                     "spiderX": ""
                 }
@@ -458,7 +455,7 @@
                     "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
                     "shortId": "",
                     "serverName": "pro-ru-213.emrata.top",
-                    "fingerprint": "firefox",
+                    "fingerprint": "qq",
                     "show": false,
                     "spiderX": ""
                 }
@@ -477,7 +474,47 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.14",
+                        "address": "213.219.212.24",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "d9e292f3-3c9e-4fea-9961-a0a8ae201eac",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "pro-ru-213.emrata.top",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #31"
+        },
+        {
+            "tag": "proxy-9",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.30",
                         "port": 443,
                         "users": [
                             {
@@ -509,10 +546,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #31"
+            "_comment": "🇷🇺 Selectel — #32"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -549,10 +586,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #32"
+            "_comment": "🇷🇺 Selectel — #33"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-11",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -589,15 +626,15 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #33"
+            "_comment": "🇷🇺 Selectel — #34"
         },
         {
-            "tag": "proxy-11",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "213.219.212.24",
+                        "address": "213.219.212.30",
                         "port": 443,
                         "users": [
                             {
@@ -629,10 +666,130 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #34"
+            "_comment": "🇷🇺 Selectel — #35"
         },
         {
-            "tag": "proxy-12",
+            "tag": "proxy-13",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.24",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "138bfe7f-a2c4-443e-befe-6a9d13e1550b",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "pro-ru-213.emrata.top",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #36"
+        },
+        {
+            "tag": "proxy-14",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.14",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "d9e292f3-3c9e-4fea-9961-a0a8ae201eac",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "pro-ru-213.emrata.top",
+                    "fingerprint": "safari",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #37"
+        },
+        {
+            "tag": "proxy-15",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "213.219.212.24",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "138bfe7f-a2c4-443e-befe-6a9d13e1550b",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
+                    "shortId": "",
+                    "serverName": "pro-ru-213.emrata.top",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #38"
+        },
+        {
+            "tag": "proxy-16",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -666,7 +823,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #39"
+            "_comment": "🇷🇺 Timeweb — #42"
         },
         {
             "tag": "direct",
