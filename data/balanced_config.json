@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "33309b40-2376-07d0-81ba-47f531ff947a",
+                                "id": "248075e0-b3e0-07d0-b971-b80757e7f183",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -226,7 +226,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #21"
+            "_comment": "🇷🇺 Selectel — #26"
         },
         {
             "tag": "proxy-2",
@@ -266,10 +266,47 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #22"
+            "_comment": "🇷🇺 Selectel — #27"
         },
         {
             "tag": "proxy-3",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "194.67.102.65",
+                        "port": 8880,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "fd22ad82-2d89-4338-b72c-5092ae699c7d",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/rutube",
+                    "headers": {
+                        "Host": "rutube.ummapeople.online"
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #32"
+        },
+        {
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -297,10 +334,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #27"
+            "_comment": "🇷🇺 Timeweb — #33"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -334,7 +371,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #28"
+            "_comment": "🇷🇺 Timeweb — #34"
         },
         {
             "tag": "direct",
