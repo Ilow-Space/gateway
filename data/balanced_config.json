@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "081483a5-58d8-07d0-ac83-091de554242f",
+                                "id": "e850136c-cc12-07d0-be57-9299cdc7fefa",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -193,6 +193,43 @@
         },
         {
             "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "87.228.122.108",
+                        "port": 4100,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #15"
+        },
+        {
+            "tag": "proxy-2",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -232,46 +269,6 @@
             "_comment": "🇷🇺 Selectel — #16"
         },
         {
-            "tag": "proxy-2",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "213.219.212.14",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e22418f6-8fe0-4088-9dc3-ec5e1c78b6b8",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
-                    "shortId": "",
-                    "serverName": "pro-ru-213.emrata.top",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #17"
-        },
-        {
             "tag": "proxy-3",
             "protocol": "vless",
             "settings": {
@@ -309,7 +306,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #18"
+            "_comment": "🇷🇺 Selectel — #17"
         },
         {
             "tag": "proxy-4",
@@ -349,7 +346,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #19"
+            "_comment": "🇷🇺 Selectel — #18"
         },
         {
             "tag": "proxy-5",
@@ -386,7 +383,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #23"
+            "_comment": "🇷🇺 Timeweb — #22"
         },
         {
             "tag": "proxy-6",
@@ -426,7 +423,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #24"
+            "_comment": "🇷🇺 Timeweb — #23"
         },
         {
             "tag": "direct",
