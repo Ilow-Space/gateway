@@ -162,7 +162,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "4954ebb1-dbc2-07d0-b14e-050e192dc8fa",
+                                "id": "a6a0ca55-270f-07d0-9992-4ea8633af821",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -226,7 +226,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #36"
+            "_comment": "🇷🇺 Selectel — #35"
         },
         {
             "tag": "proxy-2",
@@ -234,12 +234,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "83.217.192.233",
-                        "port": 443,
+                        "address": "109.73.193.169",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
+                                "id": "e1e26ef7-3291-45ac-b821-a11dcdbfdb4d",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -248,19 +248,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "rpc.v2.FeedService",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
-                    "shortId": "93762a4ddf178703",
-                    "serverName": "api.univesalsrv.com",
-                    "fingerprint": "edge",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
@@ -277,12 +271,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "104.171.132.102",
+                        "address": "83.217.192.58",
                         "port": 2200,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2001e98b-e06e-4244-910f-7ff640746eda",
+                                "id": "a08968c9-6301-459c-b047-ac7c7be57c40",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -314,12 +308,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "201.51.0.38",
-                        "port": 4100,
+                        "address": "83.217.192.233",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "e7299042-7d8f-440f-8368-2516b0e69341",
+                                "id": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -328,13 +322,19 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "rpc.v2.FeedService",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
+                    "shortId": "93762a4ddf178703",
+                    "serverName": "api.univesalsrv.com",
+                    "fingerprint": "ios",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -375,7 +375,7 @@
                     "publicKey": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
                     "shortId": "93762a4ddf178703",
                     "serverName": "api.univesalsrv.com",
-                    "fingerprint": "qq",
+                    "fingerprint": "edge",
                     "show": false,
                     "spiderX": ""
                 }
@@ -394,12 +394,55 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "72.56.246.91",
+                        "address": "83.217.192.233",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "rpc.v2.FeedService",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
+                    "shortId": "93762a4ddf178703",
+                    "serverName": "api.univesalsrv.com",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #55"
+        },
+        {
+            "tag": "proxy-7",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "201.51.0.38",
                         "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "a484645e-59df-4980-b649-92b71250ec60",
+                                "id": "e7299042-7d8f-440f-8368-2516b0e69341",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -423,10 +466,53 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #55"
+            "_comment": "🇷🇺 Timeweb — #56"
         },
         {
-            "tag": "proxy-7",
+            "tag": "proxy-8",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "83.217.192.233",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "rpc.v2.FeedService",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
+                    "shortId": "93762a4ddf178703",
+                    "serverName": "api.univesalsrv.com",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #57"
+        },
+        {
+            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -460,10 +546,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #56"
+            "_comment": "🇷🇺 Timeweb — #58"
         },
         {
-            "tag": "proxy-8",
+            "tag": "proxy-10",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -497,10 +583,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #57"
+            "_comment": "🇷🇺 Timeweb — #59"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-11",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -534,10 +620,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #58"
+            "_comment": "🇷🇺 Timeweb — #60"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -571,10 +657,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #59"
+            "_comment": "🇷🇺 Timeweb — #61"
         },
         {
-            "tag": "proxy-11",
+            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -614,10 +700,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #60"
+            "_comment": "🇷🇺 Timeweb — #62"
         },
         {
-            "tag": "proxy-12",
+            "tag": "proxy-14",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -657,47 +743,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #61"
+            "_comment": "🇷🇺 Timeweb — #63"
         },
         {
-            "tag": "proxy-13",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "147.45.235.14",
-                        "port": 2200,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "55009b9b-7b9c-4830-86c6-cb058a7a2e2f",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #62"
-        },
-        {
-            "tag": "proxy-14",
+            "tag": "proxy-15",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -726,46 +775,6 @@
                     "fingerprint": "qq",
                     "show": false,
                     "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #63"
-        },
-        {
-            "tag": "proxy-15",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "104.171.133.18",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bff1f3ee-aff7-480a-a968-d3511d9a33cb",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "yFdgeRvZ7pYNp7C5v3sOq1x3gwHxWYem62W2tB9RJ0k",
-                    "shortId": "",
-                    "serverName": "max.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
                 }
             },
             "mux": {
@@ -803,7 +812,7 @@
                     "publicKey": "yFdgeRvZ7pYNp7C5v3sOq1x3gwHxWYem62W2tB9RJ0k",
                     "shortId": "",
                     "serverName": "max.ru",
-                    "fingerprint": "qq",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -818,6 +827,46 @@
         },
         {
             "tag": "proxy-17",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "104.171.133.18",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bff1f3ee-aff7-480a-a968-d3511d9a33cb",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "yFdgeRvZ7pYNp7C5v3sOq1x3gwHxWYem62W2tB9RJ0k",
+                    "shortId": "",
+                    "serverName": "max.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #66"
+        },
+        {
+            "tag": "proxy-18",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -851,7 +900,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #66"
+            "_comment": "🇷🇺 Timeweb — #67"
         },
         {
             "tag": "direct",
