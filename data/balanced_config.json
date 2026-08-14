@@ -157,12 +157,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.198.169.86",
-                        "port": 443,
+                        "address": "5.188.140.5",
+                        "port": 2096,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "fc07967d-925b-4246-a535-9527a8242a16",
+                                "id": "4a334454-22f7-491b-9bec-583e1e8a2773",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -171,51 +171,16 @@
                 ]
             },
             "streamSettings": {
-                "network": "xhttp",
+                "network": "grpc",
                 "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc",
+                    "multiMode": false
+                },
                 "realitySettings": {
-                    "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
-                    "shortId": "b8ac5fcfceca",
-                    "serverName": "avatars.mds.yandex.net",
-                    "fingerprint": "ios",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Yandex — #1"
-        },
-        {
-            "tag": "proxy-1",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.198.169.86",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "fc07967d-925b-4246-a535-9527a8242a16",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
-                    "shortId": "b8ac5fcfceca",
-                    "serverName": "avatars.mds.yandex.net",
+                    "publicKey": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+                    "shortId": "1ed136481e0ede74",
+                    "serverName": "an.yandex.ru",
                     "fingerprint": "chrome",
                     "show": false,
                     "spiderX": ""
@@ -227,7 +192,50 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Yandex — #2"
+            "_comment": "🇷🇺 VK — #1"
+        },
+        {
+            "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "5.188.140.5",
+                        "port": 2096,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "4a334454-22f7-491b-9bec-583e1e8a2773",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+                    "shortId": "1ed136481e0ede74",
+                    "serverName": "strm.yandex.net",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #2"
         },
         {
             "tag": "proxy-2",
@@ -255,7 +263,7 @@
                     "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
                     "shortId": "b8ac5fcfceca",
                     "serverName": "avatars.mds.yandex.net",
-                    "fingerprint": "edge",
+                    "fingerprint": "ios",
                     "show": false,
                     "spiderX": ""
                 }
@@ -294,7 +302,7 @@
                     "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
                     "shortId": "b8ac5fcfceca",
                     "serverName": "avatars.mds.yandex.net",
-                    "fingerprint": "safari",
+                    "fingerprint": "chrome",
                     "show": false,
                     "spiderX": ""
                 }
@@ -333,7 +341,7 @@
                     "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
                     "shortId": "b8ac5fcfceca",
                     "serverName": "avatars.mds.yandex.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "edge",
                     "show": false,
                     "spiderX": ""
                 }
@@ -348,6 +356,84 @@
         },
         {
             "tag": "proxy-5",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.198.169.86",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "fc07967d-925b-4246-a535-9527a8242a16",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
+                    "shortId": "b8ac5fcfceca",
+                    "serverName": "avatars.mds.yandex.net",
+                    "fingerprint": "safari",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #6"
+        },
+        {
+            "tag": "proxy-6",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.198.169.86",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "fc07967d-925b-4246-a535-9527a8242a16",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "h5rOWssRWMnFJ0Ka0-PwBwwg3PMPifPShXutXEoj2QM",
+                    "shortId": "b8ac5fcfceca",
+                    "serverName": "avatars.mds.yandex.net",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #7"
+        },
+        {
+            "tag": "proxy-7",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -384,10 +470,133 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Yandex — #6"
+            "_comment": "🇷🇺 Yandex — #8"
         },
         {
-            "tag": "proxy-6",
+            "tag": "proxy-8",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "51.250.7.143",
+                        "port": 2096,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "4a334454-22f7-491b-9bec-583e1e8a2773",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+                    "shortId": "1ed136481e0ede74",
+                    "serverName": "an.yandex.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #9"
+        },
+        {
+            "tag": "proxy-9",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "51.250.7.143",
+                        "port": 2096,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "4a334454-22f7-491b-9bec-583e1e8a2773",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+                    "shortId": "1ed136481e0ede74",
+                    "serverName": "strm.yandex.net",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Yandex — #10"
+        },
+        {
+            "tag": "proxy-10",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "178.72.162.73",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "ru6.ethicsdinnerpave.online",
+                    "fingerprint": "qq",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #39"
+        },
+        {
+            "tag": "proxy-11",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -411,80 +620,6 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "wqeds.denverpresents.top",
-                    "fingerprint": "firefox",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #29"
-        },
-        {
-            "tag": "proxy-7",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "178.72.162.73",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru6.ethicsdinnerpave.online",
-                    "fingerprint": "safari",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #30"
-        },
-        {
-            "tag": "proxy-8",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "178.72.162.73",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru6.ethicsdinnerpave.online",
                     "fingerprint": "chrome",
                     "show": false
                 }
@@ -495,34 +630,33 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #31"
+            "_comment": "🇷🇺 Selectel — #40"
         },
         {
-            "tag": "proxy-9",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "139.100.197.28",
-                        "port": 52006,
+                        "address": "178.72.162.73",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "e500aaca-624e-07d0-a8e5-6c3dabb8bdf5",
+                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
+                "network": "xhttp",
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
+                    "serverName": "ru6.ethicsdinnerpave.online",
                     "fingerprint": "qq",
                     "show": false
                 }
@@ -533,35 +667,34 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #32"
+            "_comment": "🇷🇺 Selectel — #41"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "139.100.197.28",
-                        "port": 52006,
+                        "address": "178.72.162.73",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "e7c4105c-baca-07d0-b1ea-b48af0c378bd",
+                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
+                "network": "xhttp",
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "ios",
+                    "serverName": "wqeds.denverpresents.top",
+                    "fingerprint": "qq",
                     "show": false
                 }
             },
@@ -571,10 +704,47 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #33"
+            "_comment": "🇷🇺 Selectel — #42"
         },
         {
-            "tag": "proxy-11",
+            "tag": "proxy-14",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "178.72.162.73",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "60ba3369-9a78-40fe-98c3-233a6f107043",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "ru6.ethicsdinnerpave.online",
+                    "fingerprint": "edge",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #43"
+        },
+        {
+            "tag": "proxy-15",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -609,47 +779,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #34"
+            "_comment": "🇷🇺 Selectel — #44"
         },
         {
-            "tag": "proxy-12",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "87.228.122.108",
-                        "port": 4100,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #35"
-        },
-        {
-            "tag": "proxy-13",
+            "tag": "proxy-16",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -688,90 +821,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #36"
+            "_comment": "🇷🇺 Selectel — #45"
         },
         {
-            "tag": "proxy-14",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e500aaca-624e-07d0-a8e5-6c3dabb8bdf5",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "firefox",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #37"
-        },
-        {
-            "tag": "proxy-15",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e500aaca-624e-07d0-a8e5-6c3dabb8bdf5",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "ios",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #38"
-        },
-        {
-            "tag": "proxy-16",
+            "tag": "proxy-17",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -806,10 +859,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #39"
+            "_comment": "🇷🇺 Selectel — #46"
         },
         {
-            "tag": "proxy-17",
+            "tag": "proxy-18",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -844,45 +897,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #40"
-        },
-        {
-            "tag": "proxy-18",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e7c4105c-baca-07d0-b1ea-b48af0c378bd",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "chrome",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #41"
+            "_comment": "🇷🇺 Selectel — #47"
         },
         {
             "tag": "proxy-19",
@@ -920,52 +935,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #42"
+            "_comment": "🇷🇺 Selectel — #48"
         },
         {
             "tag": "proxy-20",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "c968cbca-5d8d-07d0-8e4f-7e980f9eeec5",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "ios",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #43"
-        },
-        {
-            "tag": "proxy-21",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1000,10 +973,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #44"
+            "_comment": "🇷🇺 Selectel — #49"
         },
         {
-            "tag": "proxy-22",
+            "tag": "proxy-21",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1038,10 +1011,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #45"
+            "_comment": "🇷🇺 Selectel — #50"
         },
         {
-            "tag": "proxy-23",
+            "tag": "proxy-22",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1076,132 +1049,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #46"
+            "_comment": "🇷🇺 Selectel — #51"
         },
         {
-            "tag": "proxy-24",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e500aaca-624e-07d0-a8e5-6c3dabb8bdf5",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "edge",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #47"
-        },
-        {
-            "tag": "proxy-25",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "9a0b34ac-769a-07d0-9432-b965f6b30dbd",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #48"
-        },
-        {
-            "tag": "proxy-26",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "c891910d-770a-07d0-81e0-c95461148167",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #49"
-        },
-        {
-            "tag": "proxy-27",
+            "tag": "proxy-23",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1240,10 +1091,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #50"
+            "_comment": "🇷🇺 Selectel — #52"
         },
         {
-            "tag": "proxy-28",
+            "tag": "proxy-24",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1278,10 +1129,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #51"
+            "_comment": "🇷🇺 Selectel — #53"
         },
         {
-            "tag": "proxy-29",
+            "tag": "proxy-25",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1320,10 +1171,94 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #52"
+            "_comment": "🇷🇺 Selectel — #54"
         },
         {
-            "tag": "proxy-30",
+            "tag": "proxy-26",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "139.100.197.28",
+                        "port": 52006,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "c968cbca-5d8d-07d0-8e4f-7e980f9eeec5",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "search.setlisting.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #55"
+        },
+        {
+            "tag": "proxy-27",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "139.100.197.28",
+                        "port": 52006,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "f9d075e7-e5eb-07d0-bebd-47ee1ddef6fc",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "search.setlisting.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Selectel — #56"
+        },
+        {
+            "tag": "proxy-28",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1358,52 +1293,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #53"
+            "_comment": "🇷🇺 Selectel — #57"
         },
         {
-            "tag": "proxy-31",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "139.100.197.28",
-                        "port": 52006,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "e7c4105c-baca-07d0-b1ea-b48af0c378bd",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "search.setlisting.ru",
-                    "fingerprint": "safari",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #54"
-        },
-        {
-            "tag": "proxy-32",
+            "tag": "proxy-29",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1438,10 +1331,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #55"
+            "_comment": "🇷🇺 Selectel — #58"
         },
         {
-            "tag": "proxy-33",
+            "tag": "proxy-30",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1476,20 +1369,97 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #56"
+            "_comment": "🇷🇺 Selectel — #59"
         },
         {
-            "tag": "proxy-34",
+            "tag": "proxy-31",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "104.171.132.232",
+                        "address": "188.225.33.206",
+                        "port": 8443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "c124a209-d949-4951-8234-e2d918b3e6c0",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc",
+                    "shortId": "",
+                    "serverName": "max.ru",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #77"
+        },
+        {
+            "tag": "proxy-32",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "104.171.137.176",
                         "port": 2200,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "a2aa7759-ddac-4d02-bf9d-de62cbff9481",
+                                "id": "43874ef1-1f74-4b8b-bc84-1d13caabd71b",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": "rzd.ru"
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #78"
+        },
+        {
+            "tag": "proxy-33",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "104.171.133.161",
+                        "port": 4100,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1513,10 +1483,84 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #70"
+            "_comment": "🇷🇺 Timeweb — #79"
+        },
+        {
+            "tag": "proxy-34",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.92.111.38",
+                        "port": 4100,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "0c4f46c2-afb7-4a80-8f6e-10258d80333e",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": "live.ok.ru"
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #80"
         },
         {
             "tag": "proxy-35",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "104.171.137.176",
+                        "port": 2200,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "43874ef1-1f74-4b8b-bc84-1d13caabd71b",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #81"
+        },
+        {
+            "tag": "proxy-36",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1550,44 +1594,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #71"
-        },
-        {
-            "tag": "proxy-36",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "104.171.132.232",
-                        "port": 4100,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "a2aa7759-ddac-4d02-bf9d-de62cbff9481",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #72"
+            "_comment": "🇷🇺 Timeweb — #82"
         },
         {
             "tag": "proxy-37",
@@ -1624,7 +1631,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #73"
+            "_comment": "🇷🇺 Timeweb — #83"
         },
         {
             "tag": "proxy-38",
@@ -1661,7 +1668,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #74"
+            "_comment": "🇷🇺 Timeweb — #84"
         },
         {
             "tag": "proxy-39",
@@ -1701,7 +1708,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #75"
+            "_comment": "🇷🇺 Timeweb — #85"
         },
         {
             "tag": "proxy-40",
@@ -1738,7 +1745,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #76"
+            "_comment": "🇷🇺 Timeweb — #86"
         },
         {
             "tag": "proxy-41",
@@ -1775,7 +1782,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #77"
+            "_comment": "🇷🇺 Timeweb — #87"
         },
         {
             "tag": "proxy-42",
@@ -1812,7 +1819,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #78"
+            "_comment": "🇷🇺 Timeweb — #88"
         },
         {
             "tag": "proxy-43",
@@ -1849,7 +1856,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #79"
+            "_comment": "🇷🇺 Timeweb — #89"
         },
         {
             "tag": "proxy-44",
@@ -1886,7 +1893,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #80"
+            "_comment": "🇷🇺 Timeweb — #90"
         },
         {
             "tag": "proxy-45",
@@ -1923,7 +1930,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #81"
+            "_comment": "🇷🇺 Timeweb — #91"
         },
         {
             "tag": "proxy-46",
@@ -1960,7 +1967,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #82"
+            "_comment": "🇷🇺 Timeweb — #92"
         },
         {
             "tag": "proxy-47",
@@ -1997,7 +2004,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #83"
+            "_comment": "🇷🇺 Timeweb — #93"
         },
         {
             "tag": "proxy-48",
@@ -2034,7 +2041,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #84"
+            "_comment": "🇷🇺 Timeweb — #94"
         },
         {
             "tag": "proxy-49",
@@ -2071,7 +2078,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #85"
+            "_comment": "🇷🇺 Timeweb — #95"
         },
         {
             "tag": "proxy-50",
@@ -2108,7 +2115,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #86"
+            "_comment": "🇷🇺 Timeweb — #96"
         },
         {
             "tag": "proxy-51",
@@ -2145,50 +2152,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #87"
+            "_comment": "🇷🇺 Timeweb — #97"
         },
         {
             "tag": "proxy-52",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "188.225.33.206",
-                        "port": 8443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "c124a209-d949-4951-8234-e2d918b3e6c0",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc",
-                    "shortId": "",
-                    "serverName": "max.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #88"
-        },
-        {
-            "tag": "proxy-53",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2222,10 +2189,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #89"
+            "_comment": "🇷🇺 Timeweb — #98"
         },
         {
-            "tag": "proxy-54",
+            "tag": "proxy-53",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2259,10 +2226,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #90"
+            "_comment": "🇷🇺 Timeweb — #99"
         },
         {
-            "tag": "proxy-55",
+            "tag": "proxy-54",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2296,10 +2263,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #91"
+            "_comment": "🇷🇺 Timeweb — #100"
         },
         {
-            "tag": "proxy-56",
+            "tag": "proxy-55",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2333,10 +2300,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #92"
+            "_comment": "🇷🇺 Timeweb — #101"
         },
         {
-            "tag": "proxy-57",
+            "tag": "proxy-56",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2370,10 +2337,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #93"
+            "_comment": "🇷🇺 Timeweb — #102"
         },
         {
-            "tag": "proxy-58",
+            "tag": "proxy-57",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2407,10 +2374,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #94"
+            "_comment": "🇷🇺 Timeweb — #103"
         },
         {
-            "tag": "proxy-59",
+            "tag": "proxy-58",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2444,10 +2411,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #95"
+            "_comment": "🇷🇺 Timeweb — #104"
         },
         {
-            "tag": "proxy-60",
+            "tag": "proxy-59",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2481,10 +2448,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #96"
+            "_comment": "🇷🇺 Timeweb — #105"
         },
         {
-            "tag": "proxy-61",
+            "tag": "proxy-60",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2518,10 +2485,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #97"
+            "_comment": "🇷🇺 Timeweb — #106"
         },
         {
-            "tag": "proxy-62",
+            "tag": "proxy-61",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2555,10 +2522,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #98"
+            "_comment": "🇷🇺 Timeweb — #107"
         },
         {
-            "tag": "proxy-63",
+            "tag": "proxy-62",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2592,10 +2559,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #99"
+            "_comment": "🇷🇺 Timeweb — #108"
         },
         {
-            "tag": "proxy-64",
+            "tag": "proxy-63",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2629,10 +2596,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #100"
+            "_comment": "🇷🇺 Timeweb — #109"
         },
         {
-            "tag": "proxy-65",
+            "tag": "proxy-64",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2666,10 +2633,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #101"
+            "_comment": "🇷🇺 Timeweb — #110"
         },
         {
-            "tag": "proxy-66",
+            "tag": "proxy-65",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2703,10 +2670,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #102"
+            "_comment": "🇷🇺 Timeweb — #111"
         },
         {
-            "tag": "proxy-67",
+            "tag": "proxy-66",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2740,10 +2707,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #103"
+            "_comment": "🇷🇺 Timeweb — #112"
         },
         {
-            "tag": "proxy-68",
+            "tag": "proxy-67",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2777,10 +2744,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #104"
+            "_comment": "🇷🇺 Timeweb — #113"
         },
         {
-            "tag": "proxy-69",
+            "tag": "proxy-68",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2814,10 +2781,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #105"
+            "_comment": "🇷🇺 Timeweb — #114"
         },
         {
-            "tag": "proxy-70",
+            "tag": "proxy-69",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2851,10 +2818,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #106"
+            "_comment": "🇷🇺 Timeweb — #115"
         },
         {
-            "tag": "proxy-71",
+            "tag": "proxy-70",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2888,10 +2855,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #107"
+            "_comment": "🇷🇺 Timeweb — #116"
         },
         {
-            "tag": "proxy-72",
+            "tag": "proxy-71",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2925,10 +2892,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #108"
+            "_comment": "🇷🇺 Timeweb — #117"
         },
         {
-            "tag": "proxy-73",
+            "tag": "proxy-72",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2962,10 +2929,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #109"
+            "_comment": "🇷🇺 Timeweb — #118"
         },
         {
-            "tag": "proxy-74",
+            "tag": "proxy-73",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2999,10 +2966,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #110"
+            "_comment": "🇷🇺 Timeweb — #119"
         },
         {
-            "tag": "proxy-75",
+            "tag": "proxy-74",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3036,10 +3003,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #111"
+            "_comment": "🇷🇺 Timeweb — #120"
         },
         {
-            "tag": "proxy-76",
+            "tag": "proxy-75",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3073,47 +3040,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #112"
+            "_comment": "🇷🇺 Timeweb — #121"
         },
         {
-            "tag": "proxy-77",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "77.95.201.235",
-                        "port": 2200,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "9b4ba157-f60b-4a5b-b326-4d561eb826d4",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": "rzd.ru"
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #113"
-        },
-        {
-            "tag": "proxy-78",
+            "tag": "proxy-76",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3147,10 +3077,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #114"
+            "_comment": "🇷🇺 Timeweb — #122"
         },
         {
-            "tag": "proxy-79",
+            "tag": "proxy-77",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3184,10 +3114,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #115"
+            "_comment": "🇷🇺 Timeweb — #123"
         },
         {
-            "tag": "proxy-80",
+            "tag": "proxy-78",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3224,10 +3154,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #116"
+            "_comment": "🇷🇺 Timeweb — #124"
         },
         {
-            "tag": "proxy-81",
+            "tag": "proxy-79",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -3237,7 +3167,7 @@
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "0e3a0350-0415-4729-b44a-958818118725",
+                                "id": "e392b276-8ed2-41be-ba17-b9ed32016309",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -3264,7 +3194,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #117"
+            "_comment": "🇷🇺 Timeweb — #125"
         },
         {
             "tag": "direct",
