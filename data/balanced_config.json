@@ -157,27 +157,32 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "87.228.122.108",
-                        "port": 4100,
+                        "address": "94.26.249.154",
+                        "port": 52006,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "155e8dd4-a559-407a-9ea8-13a5e829f066",
+                                "id": "b28ed669-1401-07d0-85fd-537ae0c14e2a",
                                 "level": 8,
-                                "security": "auto"
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
+                "network": "raw",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "sliver-vimri-nahui-daun.fastaichat.ru",
+                    "fingerprint": "qq",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -194,12 +199,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "94.26.249.154",
-                        "port": 52006,
+                        "address": "185.141.227.150",
+                        "port": 18443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "999cce0e-ab0a-07d0-89a9-e995286f3d94",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto",
                                 "flow": "xtls-rprx-vision"
@@ -213,13 +218,9 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "sliver-vimri-nahui-daun.fastaichat.ru",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "serverName": "disagreedebut.net",
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -228,7 +229,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #21"
+            "_comment": "🇷🇺 Timeweb — #25"
         },
         {
             "tag": "proxy-2",
@@ -236,32 +237,33 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "94.26.249.154",
-                        "port": 52006,
+                        "address": "201.51.1.84",
+                        "port": 16923,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "99923714-902e-07d0-8731-4143163447cd",
+                                "id": "ba222add-6ac1-45f1-9a18-f91cb38e324f",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "sliver-vimri-nahui-daun.fastaichat.ru",
-                    "fingerprint": "qq",
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "neurex",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+                    "shortId": "10ffb85da1c2d986",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "chrome",
                     "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -270,7 +272,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #22"
+            "_comment": "🇷🇺 Timeweb — #26"
         },
         {
             "tag": "proxy-3",
@@ -345,7 +347,7 @@
                     "publicKey": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
                     "shortId": "10ffb85da1c2d986",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "edge",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -364,12 +366,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "201.51.1.84",
-                        "port": 16923,
+                        "address": "201.51.13.38",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "ba222add-6ac1-45f1-9a18-f91cb38e324f",
+                                "id": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -378,16 +380,12 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
+                "network": "xhttp",
                 "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "neurex",
-                    "multiMode": false
-                },
                 "realitySettings": {
-                    "publicKey": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
-                    "shortId": "10ffb85da1c2d986",
-                    "serverName": "api-maps.yandex.ru",
+                    "publicKey": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
+                    "shortId": "15affa0af66dfc79",
+                    "serverName": "deepl.com",
                     "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
@@ -446,7 +444,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "201.51.13.38",
+                        "address": "72.56.250.133",
                         "port": 443,
                         "users": [
                             {
@@ -485,45 +483,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "72.56.250.133",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-                    "shortId": "15affa0af66dfc79",
-                    "serverName": "deepl.com",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #32"
-        },
-        {
-            "tag": "proxy-9",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "201.51.13.38",
                         "port": 443,
                         "users": [
@@ -555,10 +514,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #33"
+            "_comment": "🇷🇺 Timeweb — #32"
         },
         {
-            "tag": "proxy-10",
+            "tag": "proxy-9",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -584,6 +543,49 @@
                     "shortId": "15affa0af66dfc79",
                     "serverName": "deepl.com",
                     "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #33"
+        },
+        {
+            "tag": "proxy-10",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.153",
+                        "port": 9001,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc-reality",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "6ba85179e30d4fc2",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "ios",
                     "show": false,
                     "spiderX": ""
                 }
@@ -626,7 +628,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "ios",
+                    "fingerprint": "chrome",
                     "show": false,
                     "spiderX": ""
                 }
@@ -645,12 +647,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.153",
-                        "port": 9001,
+                        "address": "87.249.54.48",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "fe3489e2-6b59-4adb-91f3-e34300a13d5a",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -659,19 +661,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "grpc-reality",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "6ba85179e30d4fc2",
-                    "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
@@ -689,7 +685,7 @@
                 "vnext": [
                     {
                         "address": "87.249.54.48",
-                        "port": 4100,
+                        "port": 2200,
                         "users": [
                             {
                                 "encryption": "none",
@@ -725,43 +721,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "87.249.54.48",
-                        "port": 2200,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "fe3489e2-6b59-4adb-91f3-e34300a13d5a",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #38"
-        },
-        {
-            "tag": "proxy-15",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "201.51.1.84",
                         "port": 16923,
                         "users": [
@@ -787,6 +746,49 @@
                     "shortId": "10ffb85da1c2d986",
                     "serverName": "api-maps.yandex.ru",
                     "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #38"
+        },
+        {
+            "tag": "proxy-15",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.153",
+                        "port": 9001,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc-reality",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "6ba85179e30d4fc2",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "safari",
                     "show": false,
                     "spiderX": ""
                 }
@@ -829,7 +831,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "safari",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -844,49 +846,6 @@
         },
         {
             "tag": "proxy-17",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.153",
-                        "port": 9001,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "grpc-reality",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "6ba85179e30d4fc2",
-                    "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #41"
-        },
-        {
-            "tag": "proxy-18",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -923,10 +882,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #42"
+            "_comment": "🇷🇺 Timeweb — #41"
         },
         {
-            "tag": "proxy-19",
+            "tag": "proxy-18",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -954,6 +913,49 @@
                 "realitySettings": {
                     "publicKey": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
                     "shortId": "10ffb85da1c2d986",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "edge",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #42"
+        },
+        {
+            "tag": "proxy-19",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.19.122.88",
+                        "port": 9001,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc-reality",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
                     "fingerprint": "chrome",
                     "show": false,
@@ -998,7 +1000,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "chrome",
+                    "fingerprint": "qq",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1041,7 +1043,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "qq",
+                    "fingerprint": "firefox",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1056,49 +1058,6 @@
         },
         {
             "tag": "proxy-22",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.19.122.88",
-                        "port": 9001,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "grpc-reality",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "6ba85179e30d4fc2",
-                    "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #46"
-        },
-        {
-            "tag": "proxy-23",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1138,10 +1097,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #47"
+            "_comment": "🇷🇺 Timeweb — #46"
         },
         {
-            "tag": "proxy-24",
+            "tag": "proxy-23",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1181,10 +1140,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #48"
+            "_comment": "🇷🇺 Timeweb — #47"
         },
         {
-            "tag": "proxy-25",
+            "tag": "proxy-24",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1221,10 +1180,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #49"
+            "_comment": "🇷🇺 Timeweb — #48"
         },
         {
-            "tag": "proxy-26",
+            "tag": "proxy-25",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1264,10 +1223,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #50"
+            "_comment": "🇷🇺 Timeweb — #49"
         },
         {
-            "tag": "proxy-27",
+            "tag": "proxy-26",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1301,10 +1260,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #51"
+            "_comment": "🇷🇺 Timeweb — #50"
         },
         {
-            "tag": "proxy-28",
+            "tag": "proxy-27",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1338,10 +1297,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #52"
+            "_comment": "🇷🇺 Timeweb — #51"
         },
         {
-            "tag": "proxy-29",
+            "tag": "proxy-28",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1375,6 +1334,43 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 Timeweb — #52"
+        },
+        {
+            "tag": "proxy-29",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "5.42.103.91",
+                        "port": 2200,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 Timeweb — #53"
         },
         {
@@ -1383,8 +1379,8 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "5.42.103.91",
-                        "port": 2200,
+                        "address": "188.225.47.234",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
@@ -1420,12 +1416,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "188.225.47.234",
-                        "port": 4100,
+                        "address": "217.19.122.88",
+                        "port": 9001,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1434,13 +1430,19 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc-reality",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "6ba85179e30d4fc2",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "edge",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -1481,7 +1483,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "6ba85179e30d4fc2",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "edge",
+                    "fingerprint": "safari",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1496,49 +1498,6 @@
         },
         {
             "tag": "proxy-33",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.19.122.88",
-                        "port": 9001,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "grpc-reality",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "6ba85179e30d4fc2",
-                    "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "safari",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #57"
-        },
-        {
-            "tag": "proxy-34",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1564,6 +1523,49 @@
                     "headers": {
                         "Host": ""
                     }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #57"
+        },
+        {
+            "tag": "proxy-34",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.245.75",
+                        "port": 9001,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "grpc-reality",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "shortId": "",
+                    "serverName": "api-maps.yandex.ru",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -1604,7 +1606,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "chrome",
+                    "fingerprint": "qq",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1647,7 +1649,7 @@
                     "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "shortId": "",
                     "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "qq",
+                    "fingerprint": "safari",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1666,12 +1668,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.245.75",
-                        "port": 9001,
+                        "address": "201.51.13.38",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1680,17 +1682,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
+                "network": "xhttp",
                 "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "grpc-reality",
-                    "multiMode": false
-                },
                 "realitySettings": {
-                    "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "shortId": "",
-                    "serverName": "api-maps.yandex.ru",
-                    "fingerprint": "safari",
+                    "publicKey": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
+                    "shortId": "15affa0af66dfc79",
+                    "serverName": "deepl.com",
+                    "fingerprint": "ios",
                     "show": false,
                     "spiderX": ""
                 }
@@ -1702,6 +1700,84 @@
                 "xudpProxyUDP443": ""
             },
             "_comment": "🇷🇺 Timeweb — #61"
+        },
+        {
+            "tag": "proxy-38",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "201.51.13.38",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
+                    "shortId": "15affa0af66dfc79",
+                    "serverName": "deepl.com",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #62"
+        },
+        {
+            "tag": "proxy-39",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "72.56.250.133",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
+                    "shortId": "15affa0af66dfc79",
+                    "serverName": "deepl.com",
+                    "fingerprint": "edge",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #63"
         },
         {
             "tag": "direct",
