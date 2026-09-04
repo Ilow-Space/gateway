@@ -157,12 +157,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "188.225.47.234",
-                        "port": 4100,
+                        "address": "217.199.254.215",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050",
+                                "id": "d7430ae7-320c-4658-808b-3006d0627d82",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -171,50 +171,19 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #3"
-        },
-        {
-            "tag": "proxy-1",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "87.249.54.48",
-                        "port": 4100,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "fe3489e2-6b59-4adb-91f3-e34300a13d5a",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/v1",
-                    "headers": {
-                        "Host": ""
-                    }
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "gun",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM",
+                    "shortId": "b6549e",
+                    "serverName": "kaos.ubuntuhosting.host",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -226,7 +195,7 @@
             "_comment": "🇷🇺 Timeweb — #4"
         },
         {
-            "tag": "proxy-2",
+            "tag": "proxy-1",
             "protocol": "vless",
             "settings": {
                 "vnext": [
