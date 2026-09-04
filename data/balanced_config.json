@@ -157,12 +157,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.199.254.215",
-                        "port": 443,
+                        "address": "188.225.47.234",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "d7430ae7-320c-4658-808b-3006d0627d82",
+                                "id": "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -171,19 +171,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "gun",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM",
-                    "shortId": "b6549e",
-                    "serverName": "kaos.ubuntuhosting.host",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
