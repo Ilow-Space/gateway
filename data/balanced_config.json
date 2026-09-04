@@ -157,31 +157,27 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "46.254.18.207",
-                        "port": 443,
+                        "address": "87.249.54.48",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cf80b5fc-c445-4373-87e6-f8a22ad10d81",
+                                "id": "fe3489e2-6b59-4adb-91f3-e34300a13d5a",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru-i.monkeyisland.xyz",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
                 }
             },
             "mux": {
@@ -190,7 +186,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #3"
+            "_comment": "🇷🇺 Timeweb — #6"
         },
         {
             "tag": "proxy-1",
@@ -198,31 +194,27 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "46.254.18.207",
-                        "port": 443,
+                        "address": "200.165.234.45",
+                        "port": 4100,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cf80b5fc-c445-4373-87e6-f8a22ad10d81",
+                                "id": "39e0f41b-180b-4f7e-a607-37b135f0fd83",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru-i.monkeyisland.xyz",
-                    "fingerprint": "edge",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": "live.ok.ru"
+                    }
                 }
             },
             "mux": {
@@ -231,7 +223,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #4"
+            "_comment": "🇷🇺 Timeweb — #7"
         },
         {
             "tag": "proxy-2",
@@ -239,31 +231,33 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "46.254.18.207",
+                        "address": "217.199.254.215",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "cf80b5fc-c445-4373-87e6-f8a22ad10d81",
+                                "id": "d7430ae7-320c-4658-808b-3006d0627d82",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru-i.monkeyisland.xyz",
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "gun",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM",
+                    "shortId": "b6549e",
+                    "serverName": "kaos.ubuntuhosting.host",
                     "fingerprint": "firefox",
                     "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
+                    "spiderX": ""
                 }
             },
             "mux": {
@@ -272,92 +266,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Selectel — #5"
+            "_comment": "🇷🇺 Timeweb — #8"
         },
         {
             "tag": "proxy-3",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "46.254.18.207",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "cf80b5fc-c445-4373-87e6-f8a22ad10d81",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru-i.monkeyisland.xyz",
-                    "fingerprint": "ios",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #6"
-        },
-        {
-            "tag": "proxy-4",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "46.254.18.207",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "cf80b5fc-c445-4373-87e6-f8a22ad10d81",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "ru-i.monkeyisland.xyz",
-                    "fingerprint": "qq",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #7"
-        },
-        {
-            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -391,10 +303,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #11"
+            "_comment": "🇷🇺 Timeweb — #9"
         },
         {
-            "tag": "proxy-6",
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -428,10 +340,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #12"
+            "_comment": "🇷🇺 Timeweb — #10"
         },
         {
-            "tag": "proxy-7",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -465,7 +377,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #13"
+            "_comment": "🇷🇺 Timeweb — #11"
         },
         {
             "tag": "direct",
