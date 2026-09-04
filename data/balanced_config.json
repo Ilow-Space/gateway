@@ -157,12 +157,55 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "200.165.234.45",
-                        "port": 4100,
+                        "address": "217.199.254.215",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "39e0f41b-180b-4f7e-a607-37b135f0fd83",
+                                "id": "d7430ae7-320c-4658-808b-3006d0627d82",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "gun",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM",
+                    "shortId": "b6549e",
+                    "serverName": "kaos.ubuntuhosting.host",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #4"
+        },
+        {
+            "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "201.24.49.74",
+                        "port": 2200,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "f0528a17-863f-4160-a5a0-0d9ad03f2ee7",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -176,7 +219,7 @@
                 "wsSettings": {
                     "path": "/v1",
                     "headers": {
-                        "Host": "live.ok.ru"
+                        "Host": ""
                     }
                 }
             },
@@ -186,7 +229,44 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #2"
+            "_comment": "🇷🇺 Timeweb — #5"
+        },
+        {
+            "tag": "proxy-2",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "5.42.121.52",
+                        "port": 4100,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "64bd5231-8c49-44f4-8bc0-998eef787d05",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/v1",
+                    "headers": {
+                        "Host": ""
+                    }
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #6"
         },
         {
             "tag": "direct",
