@@ -152,6 +152,46 @@
     ],
     "outbounds": [
         {
+            "tag": "proxy-0",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.19.122.47",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "ecf728d9-1555-4e12-b178-1d8bd98465e4",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "0UUWi4Ds_Rp889_u0YNOX9PAiP10MLzetKrxS_Nhejc",
+                    "shortId": "",
+                    "serverName": "rulte.horizonless.pro",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #6"
+        },
+        {
             "tag": "direct",
             "protocol": "freedom"
         },
