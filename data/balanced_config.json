@@ -152,6 +152,80 @@
     ],
     "outbounds": [
         {
+            "tag": "proxy-0",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "37.18.14.168",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "72c02e70-d91d-42d5-a036-fefbfa8db2f4",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "9micenasralnakover.net",
+                    "fingerprint": "chrome",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #6"
+        },
+        {
+            "tag": "proxy-1",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "37.18.14.168",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "72c02e70-d91d-42d5-a036-fefbfa8db2f4",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "9micenasralnakover.net",
+                    "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #7"
+        },
+        {
             "tag": "direct",
             "protocol": "freedom"
         },
