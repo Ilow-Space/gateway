@@ -152,6 +152,47 @@
     ],
     "outbounds": [
         {
+            "tag": "proxy-0",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "147.45.175.81",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "tls",
+                "grpcSettings": {
+                    "serviceName": "grpc-ru",
+                    "multiMode": false
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "xssite.webredirect.org",
+                    "fingerprint": "random",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #6"
+        },
+        {
             "tag": "direct",
             "protocol": "freedom"
         },
