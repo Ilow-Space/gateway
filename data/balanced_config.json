@@ -296,16 +296,18 @@
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
+                "network": "ws",
                 "security": "tls",
-                "grpcSettings": {
-                    "serviceName": "grpc-ru",
-                    "multiMode": false
+                "wsSettings": {
+                    "path": "/wsru",
+                    "headers": {
+                        "Host": "xsru2.freeddns.org"
+                    }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "xssite.webredirect.org",
-                    "fingerprint": "firefox",
+                    "serverName": "xsru2.freeddns.org",
+                    "fingerprint": "ios",
                     "show": false
                 }
             },
@@ -348,7 +350,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "xsru2.freeddns.org",
-                    "fingerprint": "ios",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
