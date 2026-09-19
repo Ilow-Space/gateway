@@ -239,46 +239,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.149.23.72",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "8f9c5260-9456-472b-8ee2-444500ba6cab",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "SCuasCPva4lPGu-QRP955zZB8f6i7ydHBQh6bsSlrgo",
-                    "shortId": "3d87c490ddd41305",
-                    "serverName": "rout.snappycore.com",
-                    "fingerprint": "safari",
-                    "show": false,
-                    "spiderX": "/"
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #8"
-        },
-        {
-            "tag": "proxy-3",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "147.45.175.81",
                         "port": 443,
                         "users": [
@@ -314,10 +274,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #9"
+            "_comment": "🇷🇺 Timeweb — #8"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-3",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -355,38 +315,41 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #10"
+            "_comment": "🇷🇺 Timeweb — #9"
         },
         {
-            "tag": "proxy-5",
+            "tag": "proxy-4",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.149.23.72",
+                        "address": "147.45.175.81",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "8f9c5260-9456-472b-8ee2-444500ba6cab",
+                                "id": "c90395e6-2140-47ad-a54d-9b166729d3ef",
                                 "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
+                                "security": "auto"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "SCuasCPva4lPGu-QRP955zZB8f6i7ydHBQh6bsSlrgo",
-                    "shortId": "3d87c490ddd41305",
-                    "serverName": "rout.snappycore.com",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": "/"
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/wsru",
+                    "headers": {
+                        "Host": "xsru2.freeddns.org"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "xsru2.freeddns.org",
+                    "fingerprint": "ios",
+                    "show": false
                 }
             },
             "mux": {
@@ -395,7 +358,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #11"
+            "_comment": "🇷🇺 Timeweb — #10"
         },
         {
             "tag": "direct",
