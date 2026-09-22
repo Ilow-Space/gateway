@@ -152,52 +152,6 @@
     ],
     "outbounds": [
         {
-            "tag": "proxy-0",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.19.122.65",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #1"
-        },
-        {
             "tag": "direct",
             "protocol": "freedom"
         },
