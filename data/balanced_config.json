@@ -157,7 +157,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.19.122.65",
+                        "address": "185.141.227.216",
                         "port": 443,
                         "users": [
                             {
@@ -176,17 +176,14 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": "fbsv6.guardora.pro"
+                        "Host": ""
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -222,13 +219,13 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": ""
+                        "Host": "fbsv6.guardora.pro"
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
@@ -265,7 +262,7 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": "fbsv6.guardora.pro"
+                        "Host": ""
                     }
                 },
                 "tlsSettings": {
@@ -308,14 +305,17 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": ""
+                        "Host": "fbsv6.guardora.pro"
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -358,10 +358,7 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -403,8 +400,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -421,12 +421,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.216",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -435,22 +435,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -459,7 +450,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #7"
+            "_comment": "🇷🇺 Timeweb — #11"
         },
         {
             "tag": "proxy-7",
@@ -486,7 +477,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
@@ -523,7 +514,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -634,7 +625,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -648,43 +639,6 @@
         },
         {
             "tag": "proxy-12",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #17"
-        },
-        {
-            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -722,6 +676,43 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 Timeweb — #17"
+        },
+        {
+            "tag": "proxy-13",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.180",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 Timeweb — #18"
         },
         {
@@ -750,7 +741,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -912,8 +907,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -950,10 +944,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
-                        "h2"
+                        "h2",
+                        "http/1.1"
                     ]
                 }
             },
@@ -1032,11 +1027,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1053,12 +1044,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
-                        "port": 2053,
+                        "address": "201.51.3.184",
+                        "port": 8443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "e57de345-cc46-4e70-88d6-053d57085857",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1067,13 +1058,19 @@
                 ]
             },
             "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "gPaIIv3cDLigMHD-cm9SPvlHJlifMi5nEitdihwuNUM",
+                    "shortId": "",
+                    "serverName": "eh.vk.ru",
+                    "fingerprint": "safari",
+                    "show": false,
+                    "spiderX": ""
                 }
             },
             "mux": {
