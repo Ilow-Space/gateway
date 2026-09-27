@@ -421,46 +421,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.19.122.47",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "4b6e0604-fbd4-43fa-9950-9bf0be749153",
-                                "level": 8,
-                                "security": "auto",
-                                "flow": "xtls-rprx-vision"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "raw",
-                "security": "reality",
-                "realitySettings": {
-                    "publicKey": "EjaV0Cpi-uTaHAs-W8SHf9xGEjQdOlAW4EfXX5mbFjc",
-                    "shortId": "00000000",
-                    "serverName": "shop.dataroute.biz",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Selectel — #11"
-        },
-        {
-            "tag": "proxy-7",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "201.51.4.39",
                         "port": 443,
                         "users": [
@@ -491,7 +451,45 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #12"
+            "_comment": "🇷🇺 Timeweb — #13"
+        },
+        {
+            "tag": "proxy-7",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "201.51.4.39",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "6f73611a-bfd9-4712-9f33-fda2da70332a",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "freevk.cryposikel.ru",
+                    "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #14"
         },
         {
             "tag": "direct",
