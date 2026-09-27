@@ -461,14 +461,15 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "31.130.149.165",
-                        "port": 875,
+                        "address": "201.51.4.39",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "4a9d6057-985a-4531-851c-5b4db77b0409",
+                                "id": "6f73611a-bfd9-4712-9f33-fda2da70332a",
                                 "level": 8,
-                                "security": "auto"
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
                             }
                         ]
                     }
@@ -476,7 +477,13 @@
             },
             "streamSettings": {
                 "network": "raw",
-                "security": "none"
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "freevk.cryposikel.ru",
+                    "fingerprint": "chrome",
+                    "show": false
+                }
             },
             "mux": {
                 "concurrency": -1,
