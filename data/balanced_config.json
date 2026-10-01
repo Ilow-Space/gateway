@@ -1017,7 +1017,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1166,7 +1166,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1246,8 +1250,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -1326,11 +1329,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1367,11 +1366,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1408,7 +1403,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1425,12 +1424,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
+                        "address": "78.159.246.179",
                         "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1443,9 +1442,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "safari",
-                    "show": false
+                    "serverName": "randomquaint.net",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "h2"
+                    ]
                 }
             },
             "mux": {
