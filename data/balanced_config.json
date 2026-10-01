@@ -582,7 +582,10 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "chrome",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -599,50 +602,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.110",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #11"
-        },
-        {
-            "tag": "proxy-11",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.246.110",
+                        "address": "217.19.122.200",
                         "port": 443,
                         "users": [
                             {
@@ -680,15 +640,15 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #12"
+            "_comment": "🇷🇺 VK — #11"
         },
         {
-            "tag": "proxy-12",
+            "tag": "proxy-11",
             "protocol": "vless",
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.110",
+                        "address": "217.19.122.200",
                         "port": 443,
                         "users": [
                             {
@@ -707,7 +667,53 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": ""
+                        "Host": "fbsv6.guardora.pro"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #12"
+        },
+        {
+            "tag": "proxy-12",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.19.122.200",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "fbsv6.guardora.pro"
                     }
                 },
                 "tlsSettings": {
@@ -731,12 +737,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.110",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -745,17 +751,11 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": ""
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
+                    "serverName": "dismissaltree.net",
                     "fingerprint": "random",
                     "show": false
                 }
@@ -766,7 +766,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #14"
+            "_comment": "🇷🇺 Timeweb — #18"
         },
         {
             "tag": "proxy-14",
@@ -774,12 +774,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.110",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -788,22 +788,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -812,7 +803,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #15"
+            "_comment": "🇷🇺 Timeweb — #19"
         },
         {
             "tag": "proxy-15",
@@ -820,12 +811,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.110",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -834,18 +825,12 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": ""
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -855,7 +840,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #16"
+            "_comment": "🇷🇺 Timeweb — #20"
         },
         {
             "tag": "proxy-16",
@@ -863,12 +848,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.19.122.200",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -877,20 +862,15 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
+                        "h2",
                         "http/1.1"
                     ]
                 }
@@ -901,7 +881,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #17"
+            "_comment": "🇷🇺 Timeweb — #21"
         },
         {
             "tag": "proxy-17",
@@ -909,12 +889,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.19.122.200",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -923,64 +903,12 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #18"
-        },
-        {
-            "tag": "proxy-18",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.19.122.200",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -990,7 +918,48 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #19"
+            "_comment": "🇷🇺 Timeweb — #22"
+        },
+        {
+            "tag": "proxy-18",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.180",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #23"
         },
         {
             "tag": "proxy-19",
@@ -1017,8 +986,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1054,8 +1027,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1091,8 +1068,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1128,7 +1109,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1142,318 +1123,6 @@
         },
         {
             "tag": "proxy-23",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #28"
-        },
-        {
-            "tag": "proxy-24",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #29"
-        },
-        {
-            "tag": "proxy-25",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #30"
-        },
-        {
-            "tag": "proxy-26",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #31"
-        },
-        {
-            "tag": "proxy-27",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #32"
-        },
-        {
-            "tag": "proxy-28",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #33"
-        },
-        {
-            "tag": "proxy-29",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #34"
-        },
-        {
-            "tag": "proxy-30",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "safari",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #35"
-        },
-        {
-            "tag": "proxy-31",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1490,44 +1159,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #36"
-        },
-        {
-            "tag": "proxy-32",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.246.179",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "randomquaint.net",
-                    "fingerprint": "safari",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #37"
+            "_comment": "🇷🇺 Timeweb — #28"
         },
         {
             "tag": "direct",
