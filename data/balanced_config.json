@@ -1405,7 +1405,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -1479,8 +1479,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1554,7 +1558,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1593,8 +1601,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -1672,7 +1679,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
                         "h2",
@@ -1713,12 +1720,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -1754,10 +1757,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
-                        "h2"
+                        "h2",
+                        "http/1.1"
                     ]
                 }
             },
@@ -1831,47 +1835,6 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #44"
-        },
-        {
-            "tag": "proxy-40",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.246.179",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "randomquaint.net",
                     "fingerprint": "safari",
                     "show": false
                 }
@@ -1882,7 +1845,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #45"
+            "_comment": "🇷🇺 Timeweb — #44"
         },
         {
             "tag": "direct",
