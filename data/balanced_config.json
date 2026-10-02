@@ -176,7 +176,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
@@ -213,7 +213,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -287,7 +287,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -325,11 +325,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -407,7 +403,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -446,8 +446,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -525,12 +524,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -566,11 +561,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
+                    "fingerprint": "safari",
+                    "show": false
                 }
             },
             "mux": {
@@ -587,55 +579,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "45.93.201.119",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "moktana.net.v1.StreamService",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-                    "shortId": "7c4b9a2e8d5f3c1b",
-                    "serverName": "vir2albridge.com",
-                    "fingerprint": "ios",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #16"
-        },
-        {
-            "tag": "proxy-12",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
+                        "address": "78.159.246.179",
                         "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -648,9 +597,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
+                    "serverName": "randomquaint.net",
                     "fingerprint": "safari",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2"
+                    ]
                 }
             },
             "mux": {
@@ -659,10 +611,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #17"
+            "_comment": "🇷🇺 Timeweb — #16"
         },
         {
-            "tag": "proxy-13",
+            "tag": "proxy-12",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -699,50 +651,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #18"
-        },
-        {
-            "tag": "proxy-14",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "45.93.201.119",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "grpc",
-                "security": "reality",
-                "grpcSettings": {
-                    "serviceName": "moktana.net.v1.StreamService",
-                    "multiMode": false
-                },
-                "realitySettings": {
-                    "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-                    "shortId": "7c4b9a2e8d5f3c1b",
-                    "serverName": "vir2albridge.com",
-                    "fingerprint": "random",
-                    "show": false,
-                    "spiderX": ""
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #19"
+            "_comment": "🇷🇺 Timeweb — #17"
         },
         {
             "tag": "direct",
