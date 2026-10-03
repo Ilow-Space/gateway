@@ -1518,7 +1518,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1556,11 +1556,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1681,7 +1677,8 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2"
+                        "h2",
+                        "http/1.1"
                     ]
                 }
             },
@@ -1721,8 +1718,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -1759,8 +1755,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1838,7 +1838,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1875,11 +1879,7 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1955,8 +1955,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "randomquaint.net",
-                    "fingerprint": "safari",
-                    "show": false
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "h2"
+                    ]
                 }
             },
             "mux": {
@@ -1969,6 +1972,43 @@
         },
         {
             "tag": "proxy-43",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.246.179",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "randomquaint.net",
+                    "fingerprint": "safari",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #48"
+        },
+        {
+            "tag": "proxy-44",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2005,10 +2045,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #48"
+            "_comment": "🇷🇺 Timeweb — #49"
         },
         {
-            "tag": "proxy-44",
+            "tag": "proxy-45",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2042,10 +2082,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #49"
+            "_comment": "🇷🇺 Timeweb — #50"
         },
         {
-            "tag": "proxy-45",
+            "tag": "proxy-46",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2082,10 +2122,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #50"
+            "_comment": "🇷🇺 Timeweb — #51"
         },
         {
-            "tag": "proxy-46",
+            "tag": "proxy-47",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -2109,7 +2149,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "9micenasralnakover.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -2119,7 +2159,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #51"
+            "_comment": "🇷🇺 Timeweb — #52"
         },
         {
             "tag": "direct",
