@@ -176,7 +176,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -213,7 +213,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -288,6 +288,43 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #4"
+        },
+        {
+            "tag": "proxy-4",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.180",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
                         "h2",
@@ -301,10 +338,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #4"
+            "_comment": "🇷🇺 VK — #5"
         },
         {
-            "tag": "proxy-4",
+            "tag": "proxy-5",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -344,47 +381,6 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #5"
-        },
-        {
-            "tag": "proxy-5",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
             "_comment": "🇷🇺 VK — #6"
         },
         {
@@ -412,7 +408,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
                         "h2",
@@ -497,7 +493,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -514,12 +514,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
-                        "port": 2053,
+                        "address": "78.159.250.126",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -528,16 +528,19 @@
                 ]
             },
             "streamSettings": {
-                "network": "xhttp",
+                "network": "ws",
                 "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": ""
+                    }
+                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2"
-                    ]
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "firefox",
+                    "show": false
                 }
             },
             "mux": {
@@ -573,14 +576,17 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": ""
+                        "Host": "fbsv6.guardora.pro"
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -623,10 +629,7 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -639,49 +642,6 @@
         },
         {
             "tag": "proxy-12",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.250.126",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #13"
-        },
-        {
-            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -724,10 +684,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #14"
+            "_comment": "🇷🇺 VK — #13"
         },
         {
-            "tag": "proxy-14",
+            "tag": "proxy-13",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -767,10 +727,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #15"
+            "_comment": "🇷🇺 VK — #14"
         },
         {
-            "tag": "proxy-15",
+            "tag": "proxy-14",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -801,6 +761,52 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #15"
+        },
+        {
+            "tag": "proxy-15",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.246.110",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "fbsv6.guardora.pro"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "firefox",
                     "show": false,
                     "alpn": [
                         "http/1.1"
@@ -846,11 +852,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -892,7 +895,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
@@ -935,8 +938,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -972,17 +978,14 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": "fbsv6.guardora.pro"
+                        "Host": ""
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1024,7 +1027,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -1038,49 +1041,6 @@
         },
         {
             "tag": "proxy-21",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "78.159.246.110",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": ""
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "random",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #22"
-        },
-        {
-            "tag": "proxy-22",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1123,10 +1083,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #23"
+            "_comment": "🇷🇺 VK — #22"
         },
         {
-            "tag": "proxy-23",
+            "tag": "proxy-22",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1157,6 +1117,49 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #23"
+        },
+        {
+            "tag": "proxy-23",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "46.243.232.125",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "fbsv6.guardora.pro"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1200,49 +1203,6 @@
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "chrome",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #25"
-        },
-        {
-            "tag": "proxy-25",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "46.243.232.125",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
                         "http/1.1"
@@ -1255,10 +1215,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #26"
+            "_comment": "🇷🇺 VK — #25"
         },
         {
-            "tag": "proxy-26",
+            "tag": "proxy-25",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1301,10 +1261,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #27"
+            "_comment": "🇷🇺 VK — #26"
         },
         {
-            "tag": "proxy-27",
+            "tag": "proxy-26",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1344,6 +1304,49 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
+            "_comment": "🇷🇺 VK — #27"
+        },
+        {
+            "tag": "proxy-27",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "46.243.232.125",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "fbsv6.guardora.pro"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
             "_comment": "🇷🇺 VK — #28"
         },
         {
@@ -1371,7 +1374,7 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": "fbsv6.guardora.pro"
+                        "Host": ""
                     }
                 },
                 "tlsSettings": {
@@ -1414,14 +1417,17 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": ""
+                        "Host": "fbsv6.guardora.pro"
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1457,17 +1463,14 @@
                 "wsSettings": {
                     "path": "/ws",
                     "headers": {
-                        "Host": "fbsv6.guardora.pro"
+                        "Host": ""
                     }
                 },
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
                     "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
+                    "show": false
                 }
             },
             "mux": {
@@ -1484,7 +1487,94 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "46.243.232.125",
+                        "address": "217.19.122.200",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "fbsv6.guardora.pro"
+                    }
+                },
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fbsv6.guardora.pro",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #32"
+        },
+        {
+            "tag": "proxy-32",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.250.84",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "summerculture.net",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "+http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #33"
+        },
+        {
+            "tag": "proxy-33",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.19.122.200",
                         "port": 443,
                         "users": [
                             {
@@ -1509,7 +1599,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1519,47 +1609,10 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #32"
+            "_comment": "🇷🇺 VK — #34"
         },
         {
-            "tag": "proxy-32",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #33"
-        },
-        {
-            "tag": "proxy-33",
+            "tag": "proxy-34",
             "protocol": "vless",
             "settings": {
                 "vnext": [
@@ -1593,53 +1646,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #34"
-        },
-        {
-            "tag": "proxy-34",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "217.19.122.200",
-                        "port": 443,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": "fbsv6.guardora.pro"
-                    }
-                },
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #35"
+            "_comment": "🇷🇺 Timeweb — #39"
         },
         {
             "tag": "proxy-35",
@@ -1647,12 +1654,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.19.122.200",
-                        "port": 443,
+                        "address": "185.141.227.180",
+                        "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1661,18 +1668,12 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
+                "network": "xhttp",
                 "security": "tls",
-                "wsSettings": {
-                    "path": "/ws",
-                    "headers": {
-                        "Host": ""
-                    }
-                },
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fbsv6.guardora.pro",
-                    "fingerprint": "chrome",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -1682,7 +1683,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 VK — #36"
+            "_comment": "🇷🇺 Timeweb — #40"
         },
         {
             "tag": "proxy-36",
@@ -1709,7 +1710,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -1746,8 +1747,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1784,7 +1789,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "random",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1864,8 +1873,7 @@
                     "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -1943,7 +1951,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "safari",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -1961,7 +1969,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.250.84",
+                        "address": "185.141.227.180",
                         "port": 2053,
                         "users": [
                             {
@@ -1979,13 +1987,9 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "summerculture.net",
-                    "fingerprint": "firefox",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "+http/1.1"
-                    ]
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
+                    "show": false
                 }
             },
             "mux": {
