@@ -176,10 +176,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "summerculture.net",
-                    "fingerprint": "random",
+                    "fingerprint": "firefox",
                     "show": false,
                     "alpn": [
-                        "h2"
+                        "h2",
+                        "+http/1.1"
                     ]
                 }
             },
@@ -216,11 +217,10 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "summerculture.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "+http/1.1"
+                        "h2"
                     ]
                 }
             },
@@ -230,7 +230,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #5"
+            "_comment": "🇷🇺 VK — #2"
         },
         {
             "tag": "proxy-2",
@@ -271,7 +271,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #6"
+            "_comment": "🇷🇺 VK — #3"
         },
         {
             "tag": "proxy-3",
@@ -386,6 +386,89 @@
                 "xudpProxyUDP443": ""
             },
             "_comment": "🇷🇺 Timeweb — #9"
+        },
+        {
+            "tag": "proxy-6",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "79.174.92.222",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "03ca8c3f-e777-45b5-a1b1-592094ca99ee",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "security": "reality",
+                "grpcSettings": {
+                    "serviceName": "",
+                    "multiMode": false
+                },
+                "realitySettings": {
+                    "publicKey": "_PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI",
+                    "shortId": "a1b2c3d4",
+                    "serverName": "m.vk.com",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #10"
+        },
+        {
+            "tag": "proxy-7",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "217.149.30.73",
+                        "port": 8443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+                                "level": 8,
+                                "security": "auto",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "raw",
+                "security": "reality",
+                "realitySettings": {
+                    "publicKey": "p87u9cOh91BaXsKS-HoCoOUXxHcOwkM6ByTWmz_6b2Y",
+                    "shortId": "0da7e14db353e7d0",
+                    "serverName": "time.nztvpn.com",
+                    "fingerprint": "ios",
+                    "show": false,
+                    "spiderX": ""
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 Timeweb — #11"
         },
         {
             "tag": "direct",
