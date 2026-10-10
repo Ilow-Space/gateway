@@ -291,7 +291,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -328,10 +328,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
-                        "h2"
+                        "h2",
+                        "http/1.1"
                     ]
                 }
             },
@@ -369,7 +370,11 @@
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
-                    "show": false
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -442,7 +447,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -501,47 +506,6 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 VK — #10"
-        },
-        {
-            "tag": "proxy-10",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
                         "address": "78.159.250.84",
                         "port": 2053,
                         "users": [
@@ -566,6 +530,43 @@
                     "alpn": [
                         "h2"
                     ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #10"
+        },
+        {
+            "tag": "proxy-10",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.141.227.180",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "safari",
+                    "show": false
                 }
             },
             "mux": {
@@ -675,7 +676,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -712,7 +713,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "chrome",
                     "show": false
                 }
             },
@@ -749,12 +750,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "fingerprint": "chrome",
+                    "show": false
                 }
             },
             "mux": {
@@ -812,7 +809,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.250.84",
+                        "address": "185.141.227.180",
                         "port": 2053,
                         "users": [
                             {
@@ -830,9 +827,13 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "summerculture.net",
-                    "fingerprint": "firefox",
-                    "show": false
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "chrome",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -868,7 +869,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "fingerprint": "firefox",
                     "show": false
                 }
             },
@@ -878,7 +879,7 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #26"
+            "_comment": "🇷🇺 VK — #19"
         },
         {
             "tag": "proxy-19",
@@ -905,88 +906,6 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #27"
-        },
-        {
-            "tag": "proxy-20",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "random",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
-                }
-            },
-            "mux": {
-                "concurrency": -1,
-                "enabled": false,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": ""
-            },
-            "_comment": "🇷🇺 Timeweb — #28"
-        },
-        {
-            "tag": "proxy-21",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "185.141.227.180",
-                        "port": 2053,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                                "level": 8,
-                                "security": "auto"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "xhttp",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
                     "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
@@ -1001,7 +920,85 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "_comment": "🇷🇺 Timeweb — #29"
+            "_comment": "🇷🇺 VK — #20"
+        },
+        {
+            "tag": "proxy-20",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.250.84",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "summerculture.net",
+                    "fingerprint": "firefox",
+                    "show": false
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #21"
+        },
+        {
+            "tag": "proxy-21",
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "78.159.246.85",
+                        "port": 2053,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "95a608b6-bff1-4e10-bb61-0a39f221bb7d",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "fitindoor.net",
+                    "fingerprint": "firefox",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false,
+                "xudpConcurrency": 8,
+                "xudpProxyUDP443": ""
+            },
+            "_comment": "🇷🇺 VK — #22"
         },
         {
             "tag": "proxy-22",
@@ -1028,8 +1025,12 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "safari",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ]
                 }
             },
             "mux": {
@@ -1046,7 +1047,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.250.84",
+                        "address": "185.141.227.180",
                         "port": 2053,
                         "users": [
                             {
@@ -1064,12 +1065,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "summerculture.net",
-                    "fingerprint": "firefox",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
                         "h2",
-                        "+http/1.1"
+                        "http/1.1"
                     ]
                 }
             },
@@ -1087,12 +1088,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.85",
+                        "address": "185.141.227.180",
                         "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1105,12 +1106,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fitindoor.net",
-                    "fingerprint": "firefox",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "random",
                     "show": false,
                     "alpn": [
-                        "http/1.1",
-                        "h2"
+                        "h2",
+                        "http/1.1"
                     ]
                 }
             },
@@ -1147,8 +1148,11 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false
+                    "fingerprint": "random",
+                    "show": false,
+                    "alpn": [
+                        "h2"
+                    ]
                 }
             },
             "mux": {
@@ -1221,7 +1225,7 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "firefox",
+                    "fingerprint": "random",
                     "show": false
                 }
             },
@@ -1239,7 +1243,7 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
+                        "address": "78.159.250.84",
                         "port": 2053,
                         "users": [
                             {
@@ -1257,12 +1261,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "serverName": "summerculture.net",
+                    "fingerprint": "firefox",
                     "show": false,
                     "alpn": [
                         "h2",
-                        "http/1.1"
+                        "+http/1.1"
                     ]
                 }
             },
@@ -1280,12 +1284,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "185.141.227.180",
+                        "address": "78.159.246.85",
                         "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1298,12 +1302,12 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
+                    "serverName": "fitindoor.net",
+                    "fingerprint": "firefox",
                     "show": false,
                     "alpn": [
-                        "h2",
-                        "http/1.1"
+                        "http/1.1",
+                        "h2"
                     ]
                 }
             },
@@ -1340,12 +1344,8 @@
                 "tlsSettings": {
                     "allowInsecure": false,
                     "serverName": "dismissaltree.net",
-                    "fingerprint": "chrome",
-                    "show": false,
-                    "alpn": [
-                        "h2",
-                        "http/1.1"
-                    ]
+                    "fingerprint": "firefox",
+                    "show": false
                 }
             },
             "mux": {
@@ -1362,12 +1362,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "78.159.246.85",
+                        "address": "185.141.227.180",
                         "port": 2053,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "95a608b6-bff1-4e10-bb61-0a39f221bb7d",
+                                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                                 "level": 8,
                                 "security": "auto"
                             }
@@ -1380,8 +1380,8 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": false,
-                    "serverName": "fitindoor.net",
-                    "fingerprint": "firefox",
+                    "serverName": "dismissaltree.net",
+                    "fingerprint": "chrome",
                     "show": false,
                     "alpn": [
                         "h2",
